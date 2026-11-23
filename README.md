@@ -31,6 +31,7 @@ flowchart TD
 | `src/lastmile_report/report.py` | Esquema del reporte y verificador de cifras |
 | `src/lastmile_report/llm.py` | Única parte que llama al modelo: prompts versionados y reintento |
 | `src/lastmile_report/cli.py` | Línea de comandos para generar un reporte |
+| `src/lastmile_report/api.py` | API con FastAPI y página web local para usarlo desde el navegador |
 | `src/lastmile_report/evals.py` | Corre los 50 casos y mide aciertos, costo y tiempo |
 | `src/lastmile_report/comparar.py` | Compara varios modelos sobre los mismos archivos |
 | `evals/construir_casos.py` | Genera los 50 casos y su respuesta esperada con una implementación independiente |
@@ -46,6 +47,9 @@ cp .env.example .env        # y pega tu OPENAI_API_KEY dentro
 # Reporte de un archivo (hay 50 de ejemplo en evals/casos/archivos)
 uv run lastmile-report evals/casos/archivos/caso_21.csv
 uv run lastmile-report evals/casos/archivos/caso_21.csv --solo-metricas   # sin modelo
+
+# Página web y API local (abre http://localhost:8000)
+uv run lastmile-api
 
 # Evaluación
 uv run lastmile-eval --prompt v2 --reintentos 1 --etiqueta mi_prueba
@@ -103,4 +107,3 @@ El dataset no incluye devoluciones, causa del intento fallido ni hora real de en
 ## Pendiente
 
 - Una persona de la operación usándolo cada semana, con su opinión por escrito.
-- API con FastAPI.
