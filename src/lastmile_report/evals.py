@@ -53,17 +53,18 @@ def evaluar_codigo(caso: dict, carpeta: Path = CASOS):
     return r, m, alertas
 
 
-def evaluar_caso(caso: dict, modelo: str | None, prompt: str) -> dict:
+def evaluar_caso(caso: dict, modelo: str | None, prompt: str, reintentos: int = 0) -> dict:
     r, m, alertas = evaluar_codigo(caso)
     if m is not None and modelo:
         from lastmile_report.llm import generar_reporte
 
         try:
-            res = generar_reporte(m, alertas, modelo, prompt)
+            res = generar_reporte(m, alertas, modelo, prompt, reintentos)
             r |= {
                 "errores": res.errores,
                 "costo_usd": res.costo_usd or 0.0,
                 "segundos": res.segundos,
+                "intentos": res.intentos,
                 "tokens_entrada": res.tokens_entrada,
                 "tokens_salida": res.tokens_salida,
                 "reporte": res.reporte.model_dump(),
@@ -93,6 +94,7 @@ def resumir(resultados: list[dict]) -> dict:
         },
         "errores_por_tipo": dict(Counter(e.split(":")[0] for c in resultados for e in c["errores"])),
         "reportes_generados": len(con_reporte),
+        "reportes_con_reintento": sum(c.get("intentos", 1) > 1 for c in resultados),
         "costo_usd_por_reporte": round(sum(c["costo_usd"] for c in con_reporte) / len(con_reporte), 5)
         if con_reporte
         else 0,
@@ -109,6 +111,7 @@ def main() -> None:
     p.add_argument("--modelo", default=None)
     p.add_argument("--prompt", default="v1")
     p.add_argument("--etiqueta", default=None, help="Nombre con el que se guarda esta versión")
+    p.add_argument("--reintentos", type=int, default=0, help="Correcciones permitidas por reporte")
     p.add_argument("--sin-modelo", action="store_true")
     args = p.parse_args()
 
@@ -125,7 +128,7 @@ def main() -> None:
     )
     resultados = []
     with ThreadPoolExecutor(max_workers=6) as pool:
-        tareas = [pool.submit(evaluar_caso, c, modelo, args.prompt) for c in casos]
+        tareas = [pool.submit(evaluar_caso, c, modelo, args.prompt, args.reintentos) for c in casos]
         for i, t in enumerate(as_completed(tareas), 1):
             r = t.result()
             resultados.append(r)
@@ -137,7 +140,12 @@ def main() -> None:
             )
 
     resultados.sort(key=lambda r: r["id"])
-    resumen = {"etiqueta": etiqueta, "modelo": modelo, "prompt": args.prompt} | resumir(resultados)
+    resumen = {
+        "etiqueta": etiqueta,
+        "modelo": modelo,
+        "prompt": args.prompt,
+        "reintentos": args.reintentos,
+    } | resumir(resultados)
     print("\nRESUMEN")
     for k, v in resumen.items():
         print(f"  {k:<24} {v}")

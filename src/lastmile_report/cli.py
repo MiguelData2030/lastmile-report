@@ -33,16 +33,18 @@ def main() -> None:
     parser.add_argument("archivo", type=Path, help="CSV o Excel del día")
     parser.add_argument("--solo-metricas", action="store_true", help="No llama al modelo")
     parser.add_argument("--modelo", default=None)
-    parser.add_argument("--prompt", default="v1")
+    parser.add_argument("--prompt", default=None)
     args = parser.parse_args()
 
     metricas, alertas = procesar(args.archivo)
     if args.solo_metricas:
         salida = {"metricas": metricas.model_dump(), "alertas": [a.model_dump() for a in alertas]}
     else:
-        from lastmile_report.llm import MODELO_DEFECTO, generar_reporte
+        from lastmile_report.llm import MODELO_DEFECTO, PROMPT_DEFECTO, generar_reporte
 
-        salida = generar_reporte(metricas, alertas, args.modelo or MODELO_DEFECTO, args.prompt).model_dump()
+        salida = generar_reporte(
+            metricas, alertas, args.modelo or MODELO_DEFECTO, args.prompt or PROMPT_DEFECTO
+        ).model_dump()
     print(json.dumps(salida, indent=2, ensure_ascii=False))
 
 

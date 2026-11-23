@@ -31,7 +31,7 @@ def una_corrida(modelo: str, archivo: Path, rep: int, metricas, alertas, prompt:
     """Una llamada al modelo + su verificación. Nunca lanza excepción: la registra."""
     base = {"modelo": modelo, "archivo": archivo.name, "repeticion": rep}
     try:
-        r = generar_reporte(metricas, alertas, modelo, prompt)
+        r = generar_reporte(metricas, alertas, modelo, prompt, reintentos=0)
     except Exception as e:  # noqa: BLE001 - en un eval, un fallo es un dato más
         return base | {"errores": [f"fallo_llamada:{type(e).__name__}"], "costo_usd": 0, "segundos": 0}
     return base | r.model_dump(exclude={"modelo"})
