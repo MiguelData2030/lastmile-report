@@ -41,3 +41,15 @@ def test_archivo_invalido_devuelve_mensaje_claro():
     assert r.status_code == 422
     assert invalido["esperado"]["error"] in r.json()["detail"]
     assert cliente.post("/reporte/caso/no_existe").status_code == 404
+
+
+def test_opciones_y_evals():
+    op = cliente.get("/opciones").json()
+    assert op["defecto"]["modelo"] in op["modelos"] and op["defecto"]["prompt"] in op["prompts"]
+    filas = cliente.get("/evals").json()
+    assert any(f["etiqueta"] == "v1" and f["aciertos_pct"] == 70.0 for f in filas)
+
+
+def test_rechaza_configuracion_invalida():
+    r = cliente.post("/reporte/caso/caso_01", params={"modelo": "no-existe", "solo_metricas": True})
+    assert r.status_code == 422
