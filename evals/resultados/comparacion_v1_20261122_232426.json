@@ -1,0 +1,1723 @@
+{
+  "prompt": "v1",
+  "resumen": [
+    {
+      "modelo": "gpt-4o-mini",
+      "corridas": 6,
+      "aciertos_pct": 100.0,
+      "errores_por_reporte": 0.0,
+      "errores_por_tipo": {},
+      "costo_usd_por_reporte": 0.00045,
+      "segundos_por_reporte": 7.0
+    },
+    {
+      "modelo": "gpt-4.1-mini",
+      "corridas": 6,
+      "aciertos_pct": 66.7,
+      "errores_por_reporte": 0.67,
+      "errores_por_tipo": {
+        "cifra_no_respaldada": 4
+      },
+      "costo_usd_por_reporte": 0.00132,
+      "segundos_por_reporte": 4.5
+    },
+    {
+      "modelo": "gpt-4.1",
+      "corridas": 6,
+      "aciertos_pct": 50.0,
+      "errores_por_reporte": 0.67,
+      "errores_por_tipo": {
+        "cifra_no_respaldada": 4
+      },
+      "costo_usd_por_reporte": 0.00786,
+      "segundos_por_reporte": 3.3
+    },
+    {
+      "modelo": "gpt-5-mini",
+      "corridas": 6,
+      "aciertos_pct": 50.0,
+      "errores_por_reporte": 1.17,
+      "errores_por_tipo": {
+        "cifra_no_respaldada": 7
+      },
+      "costo_usd_por_reporte": 0.00428,
+      "segundos_por_reporte": 24.1
+    }
+  ],
+  "corridas": [
+    {
+      "modelo": "gpt-4o-mini",
+      "archivo": "DLA7_2018-08-01.csv",
+      "repeticion": 1,
+      "reporte": {
+        "resumen": "El día de hoy, la estación DLA7 logró entregar 9866 paquetes de un total de 9911, resultando en una tasa de entrega del 99.55%. Se registraron 45 intentos fallidos, lo que representa un 0.45% de fallidos. El promedio de ocupación de las rutas fue del 77.03%, con un total de 41 rutas operando. Las métricas son positivas, pero es importante atender las alertas sobre la calidad de algunas rutas.",
+        "indicadores": [
+          {
+            "clave": "paquetes",
+            "valor": 9911.0,
+            "lectura": "Número total de paquetes manejados."
+          },
+          {
+            "clave": "entregados",
+            "valor": 9866.0,
+            "lectura": "Número total de paquetes entregados."
+          },
+          {
+            "clave": "intentos_fallidos",
+            "valor": 45.0,
+            "lectura": "Intentos fallidos que se registraron."
+          },
+          {
+            "clave": "tasa_entrega_pct",
+            "valor": 99.55,
+            "lectura": "Excelente tasa de entrega."
+          },
+          {
+            "clave": "tasa_fallidos_pct",
+            "valor": 0.45,
+            "lectura": "Tasa de fallidos dentro de rangos aceptables."
+          },
+          {
+            "clave": "rutas",
+            "valor": 41.0,
+            "lectura": "Número total de rutas utilizadas."
+          },
+          {
+            "clave": "ocupacion_promedio_pct",
+            "valor": 77.03,
+            "lectura": "Promedio de ocupación de rutas."
+          }
+        ],
+        "alertas": [
+          {
+            "codigo": "RUTAS_BAJA_CALIDAD",
+            "severidad": "media",
+            "entidad": "estacion",
+            "mensaje": "Existen rutas con calidad baja, es necesario evaluar su desempeño para mejorar."
+          }
+        ],
+        "recomendaciones": [
+          "Revisar las rutas con alta tasa de fallidos, especialmente aquellas con más de 5 fallidos para identificar causas y soluciones.",
+          "Implementar capacitaciones para los operadores de las rutas críticas con el fin de mejorar la tasa de entrega.",
+          "Monitorear constantemente las zonas reportadas con más fallidos y proponer acciones de mejora."
+        ]
+      },
+      "errores": [],
+      "prompt": "v1",
+      "tokens_entrada": 1055,
+      "tokens_salida": 400,
+      "costo_usd": 0.000398,
+      "segundos": 5.93
+    },
+    {
+      "modelo": "gpt-4o-mini",
+      "archivo": "DLA7_2018-08-01.csv",
+      "repeticion": 2,
+      "reporte": {
+        "resumen": "En el día de ayer, la estación DLA7 logró entregar el 99.55% de los 9911 paquetes gestionados, con un total de 9866 entregas exitosas. Se reportaron 45 intentos fallidos de entrega, lo que representa una baja tasa de fallidos del 0.45%. Sin embargo, 18 rutas fueron categorizadas como de alta calidad, mientras que 22 se consideraron de calidad media, sugiriendo áreas de mejora en la planificación de las rutas.",
+        "indicadores": [
+          {
+            "clave": "paquetes",
+            "valor": 9911.0,
+            "lectura": "Total de paquetes gestionados por la estación."
+          },
+          {
+            "clave": "entregados",
+            "valor": 9866.0,
+            "lectura": "Total de paquetes entregados exitosamente."
+          },
+          {
+            "clave": "intentos_fallidos",
+            "valor": 45.0,
+            "lectura": "Número de intentos de entrega que no fueron exitosos."
+          },
+          {
+            "clave": "tasa_entrega_pct",
+            "valor": 99.55,
+            "lectura": "Porcentaje de entregas exitosas sobre los paquetes gestionados."
+          },
+          {
+            "clave": "tasa_fallidos_pct",
+            "valor": 0.45,
+            "lectura": "Porcentaje de intentos fallidos en comparación a los paquetes gestionados."
+          },
+          {
+            "clave": "rutas",
+            "valor": 41.0,
+            "lectura": "Total de rutas utilizadas para las entregas."
+          },
+          {
+            "clave": "ocupacion_promedio_pct",
+            "valor": 77.03,
+            "lectura": "Promedio de ocupación de los vehículos en las rutas."
+          }
+        ],
+        "alertas": [
+          {
+            "codigo": "RUTAS_BAJA_CALIDAD",
+            "severidad": "media",
+            "entidad": "estacion",
+            "mensaje": "Se han detectado múltiples rutas con calidad inferior a la óptima, lo cual podría afectar la eficiencia de las entregas."
+          }
+        ],
+        "recomendaciones": [
+          "Realizar un análisis a fondo de las rutas categorizadas como de calidad media y alta, para identificar y mitigar los factores que generan fallidos.",
+          "Mejorar la capacitación y comunicación con los repartidores en las áreas identificadas como con más fallidos, especialmente en las peores zonas: B-23.1B, A-5.2H y A-5.3J.",
+          "Incrementar la ocupación de los vehículos optimizando las rutas y reduciendo el número de viajes vacíos, para mejorar el porcentaje de ocupación promedio."
+        ]
+      },
+      "errores": [],
+      "prompt": "v1",
+      "tokens_entrada": 1055,
+      "tokens_salida": 480,
+      "costo_usd": 0.000446,
+      "segundos": 7.29
+    },
+    {
+      "modelo": "gpt-4o-mini",
+      "archivo": "DLA7_2018-08-01.csv",
+      "repeticion": 3,
+      "reporte": {
+        "resumen": "La estación DLA7 reportó un desempeño sobresaliente el día 1 de agosto de 2018, con una tasa de entrega del 99.55%. Sin embargo, se registraron 45 intentos fallidos, lo que representa una tasa de fallidos del 0.45%. Es importante prestar atención a las rutas con alta tasa de fallidos, así como a las zonas críticas identificadas, donde se han concentrado las fallas de entrega.",
+        "indicadores": [
+          {
+            "clave": "paquetes",
+            "valor": 9911.0,
+            "lectura": "Total de paquetes procesados en la estación."
+          },
+          {
+            "clave": "entregados",
+            "valor": 9866.0,
+            "lectura": "Número de paquetes entregados correctamente."
+          },
+          {
+            "clave": "intentos_fallidos",
+            "valor": 45.0,
+            "lectura": "Cantidad de intentos de entrega que no fueron exitosos."
+          },
+          {
+            "clave": "tasa_entrega_pct",
+            "valor": 99.55,
+            "lectura": "Porcentaje de entrega exitosa, que es muy alto."
+          },
+          {
+            "clave": "tasa_fallidos_pct",
+            "valor": 0.45,
+            "lectura": "Porcentaje de entregas fallidas, que está bajo el umbral aceptable."
+          },
+          {
+            "clave": "rutas",
+            "valor": 41.0,
+            "lectura": "Número total de rutas asignadas para entrega."
+          },
+          {
+            "clave": "ocupacion_promedio_pct",
+            "valor": 77.03,
+            "lectura": "Promedio de ocupación de las rutas, que es adecuado."
+          }
+        ],
+        "alertas": [
+          {
+            "codigo": "RUTAS_BAJA_CALIDAD",
+            "severidad": "media",
+            "entidad": "estacion",
+            "mensaje": "Se ha identificado que las rutas con caída en calidad superan el umbral mínimo, lo cual podría afectar la operatividad en futuras entregas."
+          }
+        ],
+        "recomendaciones": [
+          "Revisar las rutas con alta tasa de fallidos para identificar problemas recurrentes.",
+          "Implementar un plan de entrenamiento para los operadores en las zonas críticas identificadas.",
+          "Aumentar el seguimiento en las rutas con baja calidad, asegurando que los clientes estén informados sobre las ventanas horarias.",
+          "Ajustar las asignaciones de paquetes por ruta para mejorar la ocupación y disminuir intentos fallidos."
+        ]
+      },
+      "errores": [],
+      "prompt": "v1",
+      "tokens_entrada": 1055,
+      "tokens_salida": 444,
+      "costo_usd": 0.000425,
+      "segundos": 6.94
+    },
+    {
+      "modelo": "gpt-4o-mini",
+      "archivo": "DSE5_2018-07-28.csv",
+      "repeticion": 1,
+      "reporte": {
+        "resumen": "El día de hoy, la estación DSE5 procesó un total de 1488 paquetes, de los cuales 1461 fueron entregados, lo que se traduce en una tasa de entrega del 98.19%. Sin embargo, se observaron 27 intentos fallidos, lo que eleva la tasa de fallidos al 1.81%, superior a nuestro umbral histórico de 0.42%. Se identificaron rutas críticas que presentan un alto porcentaje de fallidos, lo que requiere atención inmediata.",
+        "indicadores": [
+          {
+            "clave": "paquetes",
+            "valor": 1488.0,
+            "lectura": "Total de paquetes procesados."
+          },
+          {
+            "clave": "entregados",
+            "valor": 1461.0,
+            "lectura": "Paquetes entregados exitosamente."
+          },
+          {
+            "clave": "intentos_fallidos",
+            "valor": 27.0,
+            "lectura": "Número de intentos de entrega fallidos."
+          },
+          {
+            "clave": "tasa_entrega_pct",
+            "valor": 98.19,
+            "lectura": "Porcentaje de entregas exitosas."
+          },
+          {
+            "clave": "tasa_fallidos_pct",
+            "valor": 1.81,
+            "lectura": "Porcentaje de fallidos sobre el total de intentos."
+          },
+          {
+            "clave": "rutas",
+            "valor": 6.0,
+            "lectura": "Número total de rutas realizadas."
+          },
+          {
+            "clave": "ocupacion_promedio_pct",
+            "valor": 66.14,
+            "lectura": "Ocupación promedio de la flota."
+          }
+        ],
+        "alertas": [
+          {
+            "codigo": "FALLIDOS_SOBRE_HISTORICO",
+            "severidad": "alta",
+            "entidad": "estacion",
+            "mensaje": "La tasa de fallidos del 1.81% está por encima del histórico de 0.42%, indicando un problema que requiere análisis."
+          },
+          {
+            "codigo": "RUTA_CRITICA",
+            "severidad": "alta",
+            "entidad": "RouteID_76f22159-a7b6-43d5-b424-fe21033d7784",
+            "mensaje": "La ruta ha presentado un 7.83% de fallidos, superando el umbral de 5%, lo que representa un grave inconveniente."
+          }
+        ],
+        "recomendaciones": [
+          "Realizar un análisis detallado de la ruta crítica identificada para implementar mejoras en las entregas.",
+          "Revisar el proceso de entrega en las zonas peores evaluadas para minimizar los intentos fallidos.",
+          "Aumentar el monitoreo durante los picos de entrega para ajustar la capacidad de la flota y asegurar la eficiencia."
+        ]
+      },
+      "errores": [],
+      "prompt": "v1",
+      "tokens_entrada": 1180,
+      "tokens_salida": 495,
+      "costo_usd": 0.000474,
+      "segundos": 7.04
+    },
+    {
+      "modelo": "gpt-4o-mini",
+      "archivo": "DSE5_2018-07-28.csv",
+      "repeticion": 2,
+      "reporte": {
+        "resumen": "El día de hoy, la estación DSE5 manejó un total de 1488 paquetes, logrando una tasa de entrega del 98.19%. Sin embargo, la tasa de intentos fallidos es más alta de lo habitual, situándose en 1.81%, lo que representa un aumento significativo respecto al historial. Se identificó una ruta crítica que requiere atención inmediata por tener una tasa de fallidos del 7.83%.",
+        "indicadores": [
+          {
+            "clave": "paquetes",
+            "valor": 1488.0,
+            "lectura": "Se manejaron un total de 1488 paquetes en el día."
+          },
+          {
+            "clave": "entregados",
+            "valor": 1461.0,
+            "lectura": "Se entregaron 1461 paquetes exitosamente."
+          },
+          {
+            "clave": "intentos_fallidos",
+            "valor": 27.0,
+            "lectura": "Se realizaron 27 intentos de entrega fallidos."
+          },
+          {
+            "clave": "tasa_entrega_pct",
+            "valor": 98.19,
+            "lectura": "La tasa de entrega se mantiene alta, con un 98.19%."
+          },
+          {
+            "clave": "tasa_fallidos_pct",
+            "valor": 1.81,
+            "lectura": "La tasa de intentos fallidos es del 1.81%, superior al promedio esperado."
+          },
+          {
+            "clave": "rutas",
+            "valor": 6.0,
+            "lectura": "Se realizaron entregas a través de 6 rutas."
+          },
+          {
+            "clave": "ocupacion_promedio_pct",
+            "valor": 66.14,
+            "lectura": "La ocupación promedio de las rutas fue del 66.14%."
+          }
+        ],
+        "alertas": [
+          {
+            "codigo": "FALLIDOS_SOBRE_HISTORICO",
+            "severidad": "alta",
+            "entidad": "estacion",
+            "mensaje": "La tasa de fallidos ha superado el promedio histórico de 0.42%, alcanzando 1.81%, lo que es preocupante para la operación."
+          },
+          {
+            "codigo": "RUTA_CRITICA",
+            "severidad": "alta",
+            "entidad": "RouteID_76f22159-a7b6-43d5-b424-fe21033d7784",
+            "mensaje": "La ruta ID 76f22159 tiene una tasa de fallidos del 7.83%, superior al umbral de 5%, lo que indica un problema serio en esa área."
+          }
+        ],
+        "recomendaciones": [
+          "Revisar y optimizar la ruta crítica identificada debido a su alta tasa de fallidos.",
+          "Implementar un plan de seguimiento específico para las zonas con mayor índice de fallidos, como A-1.1B y A-1.1C.",
+          "Capacitar a los repartidores en las zonas problemáticas para mejorar el porcentaje de entregas exitosas."
+        ]
+      },
+      "errores": [],
+      "prompt": "v1",
+      "tokens_entrada": 1180,
+      "tokens_salida": 537,
+      "costo_usd": 0.000499,
+      "segundos": 7.55
+    },
+    {
+      "modelo": "gpt-4o-mini",
+      "archivo": "DSE5_2018-07-28.csv",
+      "repeticion": 3,
+      "reporte": {
+        "resumen": "El día de hoy, la estación DSE5 manejó un total de 1488 paquetes, alcanzando un 98.19% de tasa de entrega. Sin embargo, se registraron 27 intentos fallidos, lo que representa una tasa de fallidos del 1.81%, superior al umbral histórico de 0.42%. Las rutas tuvieron una ocupación promedio del 66.14%, indicando una buena utilización de la flota, pero la ruta más problemática tuvo una tasa de fallidos del 7.83%, lo que requiere atención inmediata.",
+        "indicadores": [
+          {
+            "clave": "paquetes",
+            "valor": 1488.0,
+            "lectura": "Total de paquetes procesados."
+          },
+          {
+            "clave": "entregados",
+            "valor": 1461.0,
+            "lectura": "Cantidad de paquetes entregados exitosamente."
+          },
+          {
+            "clave": "intentos_fallidos",
+            "valor": 27.0,
+            "lectura": "Número de intentos de entrega que no se completaron."
+          },
+          {
+            "clave": "tasa_entrega_pct",
+            "valor": 98.19,
+            "lectura": "Porcentaje de entregas exitosas."
+          },
+          {
+            "clave": "tasa_fallidos_pct",
+            "valor": 1.81,
+            "lectura": "Porcentaje de intentos de entrega fallidos."
+          },
+          {
+            "clave": "rutas",
+            "valor": 6.0,
+            "lectura": "Número total de rutas realizadas."
+          },
+          {
+            "clave": "ocupacion_promedio_pct",
+            "valor": 66.14,
+            "lectura": "Porcentaje promedio de ocupación de vehículos."
+          }
+        ],
+        "alertas": [
+          {
+            "codigo": "FALLIDOS_SOBRE_HISTORICO",
+            "severidad": "alta",
+            "entidad": "estacion",
+            "mensaje": "La tasa de fallidos se encuentra por encima del umbral histórico, lo que puede indicar problemas en la entrega o en la planificación."
+          },
+          {
+            "codigo": "RUTA_CRITICA",
+            "severidad": "alta",
+            "entidad": "RouteID_76f22159-a7b6-43d5-b424-fe21033d7784",
+            "mensaje": "La ruta identificada como crítica tiene una tasa de fallidos del 7.83%, donde el umbral permitido es 5.0%."
+          }
+        ],
+        "recomendaciones": [
+          "Revisar la ruta crítica para identificar las causas de los altos fallidos y realizar ajustes operativos necesarios.",
+          "Fortalecer la comunicación con los repartidores en las zonas donde se han reportado problemas de entrega.",
+          "Establecer un plan de acción para reducir la tasa de fallidos y mejorar la experiencia del cliente."
+        ]
+      },
+      "errores": [],
+      "prompt": "v1",
+      "tokens_entrada": 1180,
+      "tokens_salida": 501,
+      "costo_usd": 0.000478,
+      "segundos": 7.08
+    },
+    {
+      "modelo": "gpt-4.1-mini",
+      "archivo": "DLA7_2018-08-01.csv",
+      "repeticion": 1,
+      "reporte": {
+        "resumen": "En la estación DLA7 del día 2018-08-01 se procesaron 9,911 paquetes, de los cuales 9,866 fueron entregados exitosamente, logrando una tasa de entrega del 99.55%. La tasa de intentos fallidos fue baja, con solo un 0.45%. Se realizaron 41 rutas, con una ocupación promedio del 77.03%. Se detectó una alerta de calidad media debido a una ruta con baja calidad.",
+        "indicadores": [
+          {
+            "clave": "paquetes",
+            "valor": 9911.0,
+            "lectura": "Número total de paquetes procesados hoy."
+          },
+          {
+            "clave": "entregados",
+            "valor": 9866.0,
+            "lectura": "Paquetes entregados exitosamente."
+          },
+          {
+            "clave": "intentos_fallidos",
+            "valor": 45.0,
+            "lectura": "Número de intentos fallidos de entrega."
+          },
+          {
+            "clave": "tasa_entrega_pct",
+            "valor": 99.55,
+            "lectura": "Alta tasa de entregas exitosas, cercana al 100%."
+          },
+          {
+            "clave": "tasa_fallidos_pct",
+            "valor": 0.45,
+            "lectura": "Baja tasa de intentos fallidos, por debajo del umbral crítico."
+          },
+          {
+            "clave": "rutas",
+            "valor": 41.0,
+            "lectura": "Cantidad de rutas realizadas hoy."
+          },
+          {
+            "clave": "ocupacion_promedio_pct",
+            "valor": 77.03,
+            "lectura": "Promedio de ocupación de vehículos en ruta es del 77.03%."
+          }
+        ],
+        "alertas": [
+          {
+            "codigo": "RUTAS_BAJA_CALIDAD",
+            "severidad": "media",
+            "entidad": "estacion",
+            "mensaje": "Se identificó una ruta con baja calidad que afecta el desempeño general. Esta situación debe ser monitoreada para evitar impactos futuros."
+          }
+        ],
+        "recomendaciones": [
+          "Revisar las rutas con altas tasas de fallidos, especialmente la ruta RouteID_939f1e03-6dfd-4ec1-a834-f2adc8787235 con 4.37% de fallidos.",
+          "Analizar las condiciones en las zonas B-23.1B y A-5.2H donde hay mayor concentración de intentos fallidos.",
+          "Implementar acciones correctivas en las rutas de calidad media y alta para mejorar la tasa de éxito.",
+          "Mantener la ocupación promedio en niveles similares para asegurar eficiencia operativa.",
+          "Realizar seguimiento y control de la alerta de ruta con baja calidad para prevenir deterioro del servicio."
+        ]
+      },
+      "errores": [],
+      "prompt": "v1",
+      "tokens_entrada": 1055,
+      "tokens_salida": 496,
+      "costo_usd": 0.001216,
+      "segundos": 3.87
+    },
+    {
+      "modelo": "gpt-4.1-mini",
+      "archivo": "DLA7_2018-08-01.csv",
+      "repeticion": 2,
+      "reporte": {
+        "resumen": "La estación DLA7 gestionó 9,911 paquetes con una tasa de entrega exitosa del 99.55%, reflejando un excelente desempeño general. La tasa de intentos fallidos fue baja en 0.45%, aunque se identificaron algunas rutas con tasas de fallidos superiores al promedio. La ocupación promedio de las rutas fue del 77.03%, con 41 rutas operativas. Se detectó alerta de baja calidad en una ruta, lo que requiere atención para evitar impacto en la eficiencia.",
+        "indicadores": [
+          {
+            "clave": "paquetes",
+            "valor": 9911.0,
+            "lectura": "Total de paquetes gestionados en la estación."
+          },
+          {
+            "clave": "entregados",
+            "valor": 9866.0,
+            "lectura": "Número de paquetes entregados exitosamente."
+          },
+          {
+            "clave": "intentos_fallidos",
+            "valor": 45.0,
+            "lectura": "Cantidad de intentos de entrega fallidos."
+          },
+          {
+            "clave": "tasa_entrega_pct",
+            "valor": 99.55,
+            "lectura": "Alta tasa de entrega, indicando buena eficiencia."
+          },
+          {
+            "clave": "tasa_fallidos_pct",
+            "valor": 0.45,
+            "lectura": "Muy baja tasa de fallidos, favorable para la operación."
+          },
+          {
+            "clave": "rutas",
+            "valor": 41.0,
+            "lectura": "Número total de rutas operativas en el día."
+          },
+          {
+            "clave": "ocupacion_promedio_pct",
+            "valor": 77.03,
+            "lectura": "Nivel adecuado de ocupación promedio de los vehículos."
+          }
+        ],
+        "alertas": [
+          {
+            "codigo": "RUTAS_BAJA_CALIDAD",
+            "severidad": "media",
+            "entidad": "estacion",
+            "mensaje": "Se detectó al menos una ruta con baja calidad operacional, lo cual puede afectar la eficiencia general."
+          }
+        ],
+        "recomendaciones": [
+          "Revisar las rutas identificadas con tasas de fallidos superiores al 4%, en especial las dos con más de 5 fallidos, para identificar causas y aplicar mejoras.",
+          "Implementar medidas para mejorar la calidad de la ruta con alerta de baja calidad, posiblemente ajustando recursos o capacitando al equipo.",
+          "Monitorear de cerca las zonas B-23.1B y A-5.2H, donde se concentran el mayor número de fallidos, para entender las causas específicas e intervenir oportunamente.",
+          "Mantener el seguimiento de la ocupación promedio y las entregas para asegurar la eficiencia constante y evitar sobrecarga o subutilización."
+        ]
+      },
+      "errores": [
+        "cifra_no_respaldada:4"
+      ],
+      "prompt": "v1",
+      "tokens_entrada": 1055,
+      "tokens_salida": 484,
+      "costo_usd": 0.001196,
+      "segundos": 3.73
+    },
+    {
+      "modelo": "gpt-4.1-mini",
+      "archivo": "DLA7_2018-08-01.csv",
+      "repeticion": 3,
+      "reporte": {
+        "resumen": "La estación DLA7 presentó un desempeño general muy bueno con una tasa de entrega del 99.55% y solo el 0.45% de intentos fallidos. Sin embargo, se detectaron algunas rutas con tasas de fallidos superiores al 4%, afectando la eficiencia a nivel local. Se identificaron zonas específicas con altas tasas de fallidos, que deben ser monitoreadas para mejorar la experiencia del cliente. La calidad de datos es adecuada para la toma de decisiones, aunque se detectó una alerta de baja calidad en una ruta que requiere atención.",
+        "indicadores": [
+          {
+            "clave": "paquetes",
+            "valor": 9911.0,
+            "lectura": "Total de paquetes procesados en la estación DLA7."
+          },
+          {
+            "clave": "entregados",
+            "valor": 9866.0,
+            "lectura": "Paquetes entregados correctamente, representando la mayoría del total."
+          },
+          {
+            "clave": "intentos_fallidos",
+            "valor": 45.0,
+            "lectura": "Número bajo de intentos fallidos, representando solo el 0.45%."
+          },
+          {
+            "clave": "tasa_entrega_pct",
+            "valor": 99.55,
+            "lectura": "Excelente tasa de entrega, cercana al 100%."
+          },
+          {
+            "clave": "tasa_fallidos_pct",
+            "valor": 0.45,
+            "lectura": "Baja tasa de intentos fallidos, favorable para la operación."
+          },
+          {
+            "clave": "rutas",
+            "valor": 41.0,
+            "lectura": "Número total de rutas operativas en la estación."
+          },
+          {
+            "clave": "ocupacion_promedio_pct",
+            "valor": 77.03,
+            "lectura": "Nivel promedio de ocupación de los vehículos del 77%."
+          }
+        ],
+        "alertas": [
+          {
+            "codigo": "RUTAS_BAJA_CALIDAD",
+            "severidad": "media",
+            "entidad": "estacion",
+            "mensaje": "Se detectó al menos una ruta con baja calidad operativa, lo que puede impactar la eficiencia y la satisfacción del cliente."
+          }
+        ],
+        "recomendaciones": [
+          "Investigar las causas de los intentos fallidos en las rutas con tasas superiores al 4%, especialmente la ruta con tasa de fallidos del 4.84%.",
+          "Monitorear y optimizar las zonas con mayor cantidad de fallidos, en particular la zona B-23.1B con 11 fallidos en 25 paquetes.",
+          "Mejorar la coordinación y soporte en rutas identificadas con alta tasa de fallidos para evitar mayores impactos en la tasa global.",
+          "Implementar capacitaciones o revisiones operativas para el personal de las rutas medias y altas en fallidos.",
+          "Mantener el seguimiento constante a la calidad de datos para asegurar la confiabilidad de la información y apoyar la toma de decisiones efectiva."
+        ]
+      },
+      "errores": [
+        "cifra_no_respaldada:4",
+        "cifra_no_respaldada:4",
+        "cifra_no_respaldada:77"
+      ],
+      "prompt": "v1",
+      "tokens_entrada": 1055,
+      "tokens_salida": 535,
+      "costo_usd": 0.001278,
+      "segundos": 4.14
+    },
+    {
+      "modelo": "gpt-4.1-mini",
+      "archivo": "DSE5_2018-07-28.csv",
+      "repeticion": 1,
+      "reporte": {
+        "resumen": "La estación DSE5 operó con un alto volumen de paquetes, alcanzando una tasa de entrega del 98.19% y una tasa de fallidos del 1.81%, superior al histórico esperado. Se identificó una ruta crítica con una tasa de fallidos preocupante del 7.83%, que impacta negativamente en la eficiencia general de la estación. La ocupación promedio de los vehículos fue del 66.14%, mostrando oportunidad para optimizar la capacidad en rutas específicas.",
+        "indicadores": [
+          {
+            "clave": "paquetes",
+            "valor": 1488.0,
+            "lectura": "Se procesaron 1488 paquetes durante el día."
+          },
+          {
+            "clave": "entregados",
+            "valor": 1461.0,
+            "lectura": "Se entregaron con éxito 1461 paquetes."
+          },
+          {
+            "clave": "intentos_fallidos",
+            "valor": 27.0,
+            "lectura": "Hubo 27 intentos de entrega fallidos."
+          },
+          {
+            "clave": "tasa_entrega_pct",
+            "valor": 98.19,
+            "lectura": "La tasa de entrega fue alta, con un 98.19% de éxito."
+          },
+          {
+            "clave": "tasa_fallidos_pct",
+            "valor": 1.81,
+            "lectura": "La tasa de fallidos fue del 1.81%, superior al umbral recomendado."
+          },
+          {
+            "clave": "rutas",
+            "valor": 6.0,
+            "lectura": "Se operaron 6 rutas en total."
+          },
+          {
+            "clave": "ocupacion_promedio_pct",
+            "valor": 66.14,
+            "lectura": "La ocupación promedio de los vehículos fue del 66.14%."
+          }
+        ],
+        "alertas": [
+          {
+            "codigo": "FALLIDOS_SOBRE_HISTORICO",
+            "severidad": "alta",
+            "entidad": "estacion",
+            "mensaje": "La tasa de fallidos (1.81%) supera el histórico esperado (0.42%), lo que podría afectar la satisfacción del cliente y la eficiencia operativa."
+          },
+          {
+            "codigo": "RUTA_CRITICA",
+            "severidad": "alta",
+            "entidad": "RouteID_76f22159-a7b6-43d5-b424-fe21033d7784",
+            "mensaje": "La ruta RouteID_76f22159-a7b6-43d5-b424-fe21033d7784 presenta una tasa de fallidos del 7.83%, que excede el umbral permitido, afectando la eficiencia general."
+          }
+        ],
+        "recomendaciones": [
+          "Investigar las causas específicas de los intentos fallidos en la ruta crítica para implementar soluciones focalizadas.",
+          "Optimizar la planificación de rutas para mejorar la ocupación en vehículos con baja eficiencia y reducir intentos fallidos.",
+          "Reforzar la capacitación del personal y mejorar la comunicación con los clientes para disminuir los intentos fallidos.",
+          "Implementar un monitoreo más frecuente de los indicadores clave para anticipar y mitigar riesgos operativos."
+        ]
+      },
+      "errores": [],
+      "prompt": "v1",
+      "tokens_entrada": 1180,
+      "tokens_salida": 568,
+      "costo_usd": 0.001381,
+      "segundos": 4.98
+    },
+    {
+      "modelo": "gpt-4.1-mini",
+      "archivo": "DSE5_2018-07-28.csv",
+      "repeticion": 2,
+      "reporte": {
+        "resumen": "En la estación DSE5 durante el 28 de julio de 2018, se procesaron un total de 1488 paquetes con una tasa de entrega alta del 98.19%. Sin embargo, la tasa de intentos fallidos fue significativa, alcanzando el 1.81%, lo que superó el histórico habitual y generó alertas críticas. Se identificó una ruta crítica (RouteID_76f22159-a7b6-43d5-b424-fe21033d7784) con una tasa de fallidos del 7.83%, muy por encima del umbral establecido, afectando negativamente el rendimiento general.",
+        "indicadores": [
+          {
+            "clave": "paquetes",
+            "valor": 1488.0,
+            "lectura": "Se gestionaron 1488 paquetes en total."
+          },
+          {
+            "clave": "entregados",
+            "valor": 1461.0,
+            "lectura": "Se entregaron 1461 paquetes exitosamente."
+          },
+          {
+            "clave": "intentos_fallidos",
+            "valor": 27.0,
+            "lectura": "Hubo 27 intentos fallidos de entrega."
+          },
+          {
+            "clave": "tasa_entrega_pct",
+            "valor": 98.19,
+            "lectura": "Alta tasa de entrega con un 98.19% de éxito."
+          },
+          {
+            "clave": "tasa_fallidos_pct",
+            "valor": 1.81,
+            "lectura": "La tasa de fallidos fue del 1.81%, superior al histórico."
+          },
+          {
+            "clave": "rutas",
+            "valor": 6.0,
+            "lectura": "Se operaron 6 rutas distribuidas."
+          },
+          {
+            "clave": "ocupacion_promedio_pct",
+            "valor": 66.14,
+            "lectura": "La ocupación promedio de las rutas fue del 66.14%."
+          }
+        ],
+        "alertas": [
+          {
+            "codigo": "FALLIDOS_SOBRE_HISTORICO",
+            "severidad": "alta",
+            "entidad": "estacion",
+            "mensaje": "La tasa de intentos fallidos del 1.81% supera significativamente el histórico de 0.42%, impactando la eficiencia operativa."
+          },
+          {
+            "codigo": "RUTA_CRITICA",
+            "severidad": "alta",
+            "entidad": "RouteID_76f22159-a7b6-43d5-b424-fe21033d7784",
+            "mensaje": "La ruta RouteID_76f22159 presenta una tasa de fallidos del 7.83%, muy por encima del umbral permitido, lo que genera un riesgo operativo."
+          }
+        ],
+        "recomendaciones": [
+          "Analizar las causas específicas de los intentos fallidos para implementar medidas correctivas rápidas.",
+          "Revisar y optimizar la planificación y asignación de recursos en la ruta crítica RouteID_76f22159.",
+          "Incrementar la capacitación del personal de entrega para mejorar las tasas de éxito.",
+          "Monitorear continuamente el desempeño de rutas y zonas con altas tasas de fallidos para prevenir afectaciones futuras."
+        ]
+      },
+      "errores": [],
+      "prompt": "v1",
+      "tokens_entrada": 1180,
+      "tokens_salida": 569,
+      "costo_usd": 0.001382,
+      "segundos": 4.88
+    },
+    {
+      "modelo": "gpt-4.1-mini",
+      "archivo": "DSE5_2018-07-28.csv",
+      "repeticion": 3,
+      "reporte": {
+        "resumen": "La estación DSE5 procesó un total de 1488 paquetes con una tasa de entrega del 98.19% y una tasa de fallidos del 1.81%, por encima del histórico de 0.42%. Se operaron 6 rutas, con una ocupación promedio del 66.14%. La ruta RouteID_76f22159-a7b6-43d5-b424-fe21033d7784 presenta una tasa crítica de fallidos del 7.83%.",
+        "indicadores": [
+          {
+            "clave": "paquetes",
+            "valor": 1488.0,
+            "lectura": "Se procesaron 1488 paquetes en total."
+          },
+          {
+            "clave": "entregados",
+            "valor": 1461.0,
+            "lectura": "Se entregaron exitosamente 1461 paquetes."
+          },
+          {
+            "clave": "intentos_fallidos",
+            "valor": 27.0,
+            "lectura": "Hubo 27 intentos de entrega fallidos."
+          },
+          {
+            "clave": "tasa_entrega_pct",
+            "valor": 98.19,
+            "lectura": "La tasa de entrega fue del 98.19%, lo que es satisfactoria."
+          },
+          {
+            "clave": "tasa_fallidos_pct",
+            "valor": 1.81,
+            "lectura": "La tasa de fallidos fue del 1.81%, superior al umbral esperado."
+          },
+          {
+            "clave": "rutas",
+            "valor": 6.0,
+            "lectura": "Se completaron 6 rutas de entrega."
+          },
+          {
+            "clave": "ocupacion_promedio_pct",
+            "valor": 66.14,
+            "lectura": "La ocupación promedio de las rutas fue del 66.14%."
+          }
+        ],
+        "alertas": [
+          {
+            "codigo": "FALLIDOS_SOBRE_HISTORICO",
+            "severidad": "alta",
+            "entidad": "estacion",
+            "mensaje": "La tasa de fallidos del 1.81% es significativamente mayor que el histórico de 0.42%, lo que indica problemas operativos recientes."
+          },
+          {
+            "codigo": "RUTA_CRITICA",
+            "severidad": "alta",
+            "entidad": "RouteID_76f22159-a7b6-43d5-b424-fe21033d7784",
+            "mensaje": "La ruta con ID RouteID_76f22159-a7b6-43d5-b424-fe21033d7784 presenta una tasa de fallidos del 7.83%, superando el umbral de alerta del 5%, lo que puede afectar la satisfacción del cliente."
+          }
+        ],
+        "recomendaciones": [
+          "Investigar las causas de la alta tasa de fallidos general e implementar medidas correctivas inmediatas.",
+          "Analizar detalladamente la ruta RouteID_76f22159-a7b6-43d5-b424-fe21033d7784 para identificar y corregir los problemas que generan fallidos.",
+          "Optimizar la ocupación en las rutas con baja ocupación para mejorar la eficiencia del reparto.",
+          "Mantener monitoreo continuo de las tasas de fallidos y ajustar las rutas o recursos según resultados.",
+          "Capacitar a los equipos en las rutas críticas para mejorar la gestión y ejecución de entregas."
+        ]
+      },
+      "errores": [],
+      "prompt": "v1",
+      "tokens_entrada": 1180,
+      "tokens_salida": 610,
+      "costo_usd": 0.001448,
+      "segundos": 5.32
+    },
+    {
+      "modelo": "gpt-4.1",
+      "archivo": "DLA7_2018-08-01.csv",
+      "repeticion": 1,
+      "reporte": {
+        "resumen": "La estación DLA7 presentó un desempeño sólido el 01 de agosto de 2018, alcanzando una tasa de entrega del 99.55% sobre un alto volumen de 9,911 paquetes. Los intentos fallidos se mantuvieron bajos, sumando solo 45 casos, aunque se identificaron algunas zonas y rutas con incidentes elevados. Se detecta una alerta por presencia de una ruta de baja calidad según el score operacional. La operación diaria mantiene buenas métricas generales, pero conviene revisar oportunidades de mejora en las zonas y rutas críticas.",
+        "indicadores": [
+          {
+            "clave": "paquetes",
+            "valor": 9911.0,
+            "lectura": "Se manejó un volumen elevado de paquetes en el día."
+          },
+          {
+            "clave": "entregados",
+            "valor": 9866.0,
+            "lectura": "Prácticamente la totalidad de los paquetes fueron entregados."
+          },
+          {
+            "clave": "intentos_fallidos",
+            "valor": 45.0,
+            "lectura": "Los intentos fallidos se mantienen muy bajos respecto al volumen total."
+          },
+          {
+            "clave": "tasa_entrega_pct",
+            "valor": 99.55,
+            "lectura": "Muy alta eficacia de entrega, por encima del estándar."
+          },
+          {
+            "clave": "tasa_fallidos_pct",
+            "valor": 0.45,
+            "lectura": "La tasa de fallidos es sustancialmente menor al umbral (2%)."
+          },
+          {
+            "clave": "rutas",
+            "valor": 41.0,
+            "lectura": "Se gestionaron 41 rutas de reparto en la jornada."
+          },
+          {
+            "clave": "ocupacion_promedio_pct",
+            "valor": 77.03,
+            "lectura": "La ocupación promedio por ruta es adecuada para la eficiencia operativa."
+          }
+        ],
+        "alertas": [
+          {
+            "codigo": "RUTAS_BAJA_CALIDAD",
+            "severidad": "media",
+            "entidad": "estacion",
+            "mensaje": "Se identificó al menos una ruta calificada como \"Low\" en su score operativo, lo que puede afectar la entrega en ciertas áreas."
+          }
+        ],
+        "recomendaciones": [
+          "Realizar una revisión operacional de la ruta identificada como baja calidad (\"Low\"), para definir la causa raíz y plantear acciones correctivas.",
+          "Investigar puntualmente las zonas B-23.1B, A-5.2H y A-5.3J por sus niveles elevados de fallidos respecto a sus volúmenes.",
+          "Analizar las rutas con tasa alta de fallidos (>4%), especialmente RouteID_939f1e03-6dfd-4ec1-a834-f2adc8787235 y RouteID_9850318d-b2af-4570-a2f1-46f02bd9c9f7, para identificar patrones de fallo y posibles mejoras logísticas.",
+          "Continuar el monitoreo de ocupación de rutas y ajustar asignaciones para mantener la eficiencia."
+        ]
+      },
+      "errores": [
+        "cifra_no_respaldada:4"
+      ],
+      "prompt": "v1",
+      "tokens_entrada": 1055,
+      "tokens_salida": 679,
+      "costo_usd": 0.007542,
+      "segundos": 2.9
+    },
+    {
+      "modelo": "gpt-4.1",
+      "archivo": "DLA7_2018-08-01.csv",
+      "repeticion": 2,
+      "reporte": {
+        "resumen": "La estación DLA7 tuvo un desempeño sobresaliente en entregas hoy, alcanzando una tasa de entrega del 99.55%. El volumen de paquetes fue alto y la ocupación promedio de las rutas se mantuvo en niveles adecuados. Sin embargo, se identificó una alerta por la existencia de una ruta con baja calidad, y algunas zonas concentraron la mayoría de los intentos fallidos, por lo que deben ser atendidas. No hubo rechazos ni problemas en la calidad de los datos.",
+        "indicadores": [
+          {
+            "clave": "paquetes",
+            "valor": 9911.0,
+            "lectura": "Se manejó un volumen alto de paquetes procesados."
+          },
+          {
+            "clave": "entregados",
+            "valor": 9866.0,
+            "lectura": "La gran mayoría de paquetes se entregaron correctamente."
+          },
+          {
+            "clave": "intentos_fallidos",
+            "valor": 45.0,
+            "lectura": "El número de intentos fallidos fue bajo respecto al total de paquetes."
+          },
+          {
+            "clave": "tasa_entrega_pct",
+            "valor": 99.55,
+            "lectura": "Tasa de entrega muy alta, por encima del umbral de excelencia."
+          },
+          {
+            "clave": "tasa_fallidos_pct",
+            "valor": 0.45,
+            "lectura": "Tasa de fallidos baja y controlada."
+          },
+          {
+            "clave": "rutas",
+            "valor": 41.0,
+            "lectura": "Buen número de rutas activas en operación."
+          },
+          {
+            "clave": "ocupacion_promedio_pct",
+            "valor": 77.03,
+            "lectura": "Ocupación promedio adecuada en el reparto."
+          }
+        ],
+        "alertas": [
+          {
+            "codigo": "RUTAS_BAJA_CALIDAD",
+            "severidad": "media",
+            "entidad": "estacion",
+            "mensaje": "Se detectó al menos una ruta con baja calidad operativa, lo que podría afectar la experiencia de entrega y requiere seguimiento puntual."
+          }
+        ],
+        "recomendaciones": [
+          "Revisar el desempeño de la ruta identificada con baja calidad y tomar medidas para mejorar su gestión.",
+          "Analizar detenidamente las zonas B-23.1B, A-5.2H y A-5.3J donde se concentraron la mayoría de los intentos fallidos para identificar causas recurrentes y minimizarlas.",
+          "Realizar seguimiento a las rutas que hoy estuvieron cerca de los umbrales de fallidos por ruta para prevenir nuevas alertas.",
+          "Continuar monitoreando la ocupación promedio para evitar sobrecargas en los repartidores y asegurar tiempos de entrega óptimos."
+        ]
+      },
+      "errores": [],
+      "prompt": "v1",
+      "tokens_entrada": 1055,
+      "tokens_salida": 607,
+      "costo_usd": 0.006966,
+      "segundos": 3.11
+    },
+    {
+      "modelo": "gpt-4.1",
+      "archivo": "DLA7_2018-08-01.csv",
+      "repeticion": 3,
+      "reporte": {
+        "resumen": "La estación DLA7 tuvo un muy buen desempeño en el día, registrando una tasa de entrega superior al 99%. Los intentos fallidos se mantienen por debajo del umbral esperado. Sin embargo, existen rutas y zonas específicas donde los problemas de entrega fueron más notorios. Se identificó una alerta de baja calidad en una ruta, lo que requiere seguimiento para mejorar la eficiencia.",
+        "indicadores": [
+          {
+            "clave": "paquetes",
+            "valor": 9911.0,
+            "lectura": "Se gestionaron 9911 paquetes en total durante el día."
+          },
+          {
+            "clave": "entregados",
+            "valor": 9866.0,
+            "lectura": "Se entregaron con éxito 9866 paquetes."
+          },
+          {
+            "clave": "intentos_fallidos",
+            "valor": 45.0,
+            "lectura": "Se presentaron 45 intentos de entrega fallidos, cifra baja respecto al volumen total."
+          },
+          {
+            "clave": "tasa_entrega_pct",
+            "valor": 99.55,
+            "lectura": "La tasa de entrega fue excelente con un 99.55%."
+          },
+          {
+            "clave": "tasa_fallidos_pct",
+            "valor": 0.45,
+            "lectura": "Sólo el 0.45% de los intentos resultaron fallidos, por debajo del umbral crítico."
+          },
+          {
+            "clave": "rutas",
+            "valor": 41.0,
+            "lectura": "Se operaron 41 rutas de reparto."
+          },
+          {
+            "clave": "ocupacion_promedio_pct",
+            "valor": 77.03,
+            "lectura": "La ocupación promedio de las rutas fue del 77.03%, lo que indica un buen balance en la carga."
+          }
+        ],
+        "alertas": [
+          {
+            "codigo": "RUTAS_BAJA_CALIDAD",
+            "severidad": "media",
+            "entidad": "estacion",
+            "mensaje": "Se detectó al menos una ruta con desempeño bajo en la estación, lo que podría afectar la experiencia del cliente si se vuelve una tendencia."
+          }
+        ],
+        "recomendaciones": [
+          "Analizar las causas de los fallidos en las rutas y zonas más afectadas (por ejemplo, B-23.1B y A-5.2H) para implementar acciones específicas.",
+          "Dar seguimiento a la ruta identificada con baja calidad, revisando asignación de paquetes y performance de los repartidores.",
+          "Reforzar comunicación con los equipos operativos para evitar reincidencia en las zonas y rutas señaladas.",
+          "Mantener la ocupación en niveles similares para aprovechar la capacidad operativa sin sobrecargas."
+        ]
+      },
+      "errores": [
+        "cifra_no_respaldada:99"
+      ],
+      "prompt": "v1",
+      "tokens_entrada": 1055,
+      "tokens_salida": 602,
+      "costo_usd": 0.006926,
+      "segundos": 2.82
+    },
+    {
+      "modelo": "gpt-4.1",
+      "archivo": "DSE5_2018-07-28.csv",
+      "repeticion": 1,
+      "reporte": {
+        "resumen": "La operación de la estación DSE5 mostró un buen desempeño general, con una tasa de entrega del 98.19%. Sin embargo, la tasa de intentos fallidos del 1.81% supera el promedio histórico y dos umbrales importantes. Una ruta específica presenta una tasa de fallidos crítica, lo que impacta negativamente la operación y requiere atención prioritaria. Recomendamos enfocarnos en las rutas y zonas con mayores incidencias para evitar que la tendencia se repita.",
+        "indicadores": [
+          {
+            "clave": "paquetes",
+            "valor": 1488.0,
+            "lectura": "Volumen total de paquetes procesados fue alto y en línea con la capacidad."
+          },
+          {
+            "clave": "entregados",
+            "valor": 1461.0,
+            "lectura": "El 98.19% de los paquetes fueron entregados exitosamente."
+          },
+          {
+            "clave": "intentos_fallidos",
+            "valor": 27.0,
+            "lectura": "Hubo 27 intentos de entrega fallidos, una cifra que supera el promedio histórico."
+          },
+          {
+            "clave": "tasa_entrega_pct",
+            "valor": 98.19,
+            "lectura": "La tasa de entregas se mantiene por encima del objetivo mínimo."
+          },
+          {
+            "clave": "tasa_fallidos_pct",
+            "valor": 1.81,
+            "lectura": "Tasa de fallidos casi duplica el umbral histórico y operativo (1.81% vs 0.42%)."
+          },
+          {
+            "clave": "rutas",
+            "valor": 6.0,
+            "lectura": "La distribución del volumen fue sobre 6 rutas."
+          },
+          {
+            "clave": "ocupacion_promedio_pct",
+            "valor": 66.14,
+            "lectura": "La ocupación promedio por vehículo fue del 66.14%, aceptable pero mejorable."
+          }
+        ],
+        "alertas": [
+          {
+            "codigo": "FALLIDOS_SOBRE_HISTORICO",
+            "severidad": "alta",
+            "entidad": "estacion",
+            "mensaje": "La estación presenta una tasa de fallidos (1.81%) significativamente superior al histórico (0.42%), lo cual puede reflejar problemas recurrentes."
+          },
+          {
+            "codigo": "RUTA_CRITICA",
+            "severidad": "alta",
+            "entidad": "RouteID_76f22159-a7b6-43d5-b424-fe21033d7784",
+            "mensaje": "La ruta con código especificado registró una tasa de fallidos del 7.83%, rebasando ampliamente el umbral permitido (5%)."
+          }
+        ],
+        "recomendaciones": [
+          "Analizar detalladamente la ruta RouteID_76f22159-a7b6-43d5-b424-fe21033d7784 para identificar causas de fallidos (zonas específicas, tipo de paquete, operador).",
+          "Investigar las zonas A-1.1B, A-1.1C y A-1.3C, donde se concentraron múltiples fallidos, para determinar patrones y orientar acciones correctivas.",
+          "Realizar capacitación o retroalimentación personalizada a los operadores de rutas con desempeño crítico.",
+          "Revisar y balancear la ocupación de las rutas para mejorar la eficiencia y reducir el riesgo de saturación en rutas críticas.",
+          "Hacer seguimiento puntual a la evolución de la tasa de fallidos en los próximos días para confirmar la efectividad de las acciones tomadas."
+        ]
+      },
+      "errores": [],
+      "prompt": "v1",
+      "tokens_entrada": 1180,
+      "tokens_salida": 782,
+      "costo_usd": 0.008616,
+      "segundos": 3.57
+    },
+    {
+      "modelo": "gpt-4.1",
+      "archivo": "DSE5_2018-07-28.csv",
+      "repeticion": 2,
+      "reporte": {
+        "resumen": "El día de hoy se procesaron 1,488 paquetes en la estación DSE5, con un desempeño de entrega general alto: el 98.19% fue entregado exitosamente. Sin embargo, la tasa de intentos fallidos (1.81%) está significativamente por encima del histórico registrado (0.42%), lo que indica un área de mejora urgente. Además, una de las rutas, con score alto, tuvo un desempeño crítico con 7.83% de fallidos. Las zonas A-1.1B, A-1.1C y A-1.3C concentraron la mayoría de los problemas.",
+        "indicadores": [
+          {
+            "clave": "paquetes",
+            "valor": 1488.0,
+            "lectura": "Se gestionó un volumen alto de paquetes."
+          },
+          {
+            "clave": "entregados",
+            "valor": 1461.0,
+            "lectura": "La mayoría de los paquetes fueron entregados exitosamente."
+          },
+          {
+            "clave": "intentos_fallidos",
+            "valor": 27.0,
+            "lectura": "Hubo 27 intentos de entrega fallidos."
+          },
+          {
+            "clave": "tasa_entrega_pct",
+            "valor": 98.19,
+            "lectura": "El porcentaje de paquetes entregados es muy alto."
+          },
+          {
+            "clave": "tasa_fallidos_pct",
+            "valor": 1.81,
+            "lectura": "La tasa de fallidos supera el umbral histórico y el objetivo operativo."
+          },
+          {
+            "clave": "rutas",
+            "valor": 6.0,
+            "lectura": "Se operaron 6 rutas hoy."
+          },
+          {
+            "clave": "ocupacion_promedio_pct",
+            "valor": 66.14,
+            "lectura": "La ocupación promedio de las rutas está en nivel aceptable, pero con rutas poco ocupadas."
+          }
+        ],
+        "alertas": [
+          {
+            "codigo": "FALLIDOS_SOBRE_HISTORICO",
+            "severidad": "alta",
+            "entidad": "estacion",
+            "mensaje": "La tasa de fallidos (1.81%) fue más de 4 veces el histórico (0.42%), señalando un deterioro importante en el servicio."
+          },
+          {
+            "codigo": "RUTA_CRITICA",
+            "severidad": "alta",
+            "entidad": "RouteID_76f22159-a7b6-43d5-b424-fe21033d7784",
+            "mensaje": "La ruta \"RouteID_76f22159-a7b6-43d5-b424-fe21033d7784\" presentó una tasa de fallidos de 7.83%, excediendo el umbral crítico (5%) y aportando la mayoría de los incidentes."
+          }
+        ],
+        "recomendaciones": [
+          "Revisar las causas específicas de los fallidos en la ruta RouteID_76f22159-a7b6-43d5-b424-fe21033d7784 y activar plan de acción correctivo.",
+          "Realizar capacitación o refuerzo específico a los repartidores asignados a zonas A-1.1B, A-1.1C y A-1.3C.",
+          "Analizar la planeación de rutas para mejorar la ocupación y distribución de paquetes, evitando rutas subutilizadas.",
+          "Monitorear en próximos días la tendencia de fallidos para actuar rápidamente si la situación persiste."
+        ]
+      },
+      "errores": [],
+      "prompt": "v1",
+      "tokens_entrada": 1180,
+      "tokens_salida": 768,
+      "costo_usd": 0.008504,
+      "segundos": 3.39
+    },
+    {
+      "modelo": "gpt-4.1",
+      "archivo": "DSE5_2018-07-28.csv",
+      "repeticion": 3,
+      "reporte": {
+        "resumen": "La estación DSE5 tuvo un volumen total de 1,488 paquetes y una tasa de entrega del 98.19%. Sin embargo, la tasa de fallidos (1.81%) supera el histórico y el umbral permitido, lo cual es motivo de atención. Una ruta crítica evidencia un desempeño muy por debajo de lo esperado y tres zonas presentan concentración de paquetes fallidos. Es importante atender estas alertas para evitar afectaciones a la satisfacción del cliente y la eficiencia operativa.",
+        "indicadores": [
+          {
+            "clave": "paquetes",
+            "valor": 1488.0,
+            "lectura": "Se movilizaron 1,488 paquetes en el día."
+          },
+          {
+            "clave": "entregados",
+            "valor": 1461.0,
+            "lectura": "El 98.2% de los paquetes fueron entregados exitosamente."
+          },
+          {
+            "clave": "intentos_fallidos",
+            "valor": 27.0,
+            "lectura": "Hubo 27 intentos fallidos de entrega."
+          },
+          {
+            "clave": "tasa_entrega_pct",
+            "valor": 98.19,
+            "lectura": "Alta tasa de éxito de entrega (98.19%)."
+          },
+          {
+            "clave": "tasa_fallidos_pct",
+            "valor": 1.81,
+            "lectura": "La tasa de fallidos (1.81%) está por encima del umbral máximo permitido (2%)."
+          },
+          {
+            "clave": "rutas",
+            "valor": 6.0,
+            "lectura": "Se operaron 6 rutas en total."
+          },
+          {
+            "clave": "ocupacion_promedio_pct",
+            "valor": 66.14,
+            "lectura": "La ocupación promedio de las rutas fue 66.1%, hay margen para optimizar la carga."
+          }
+        ],
+        "alertas": [
+          {
+            "codigo": "FALLIDOS_SOBRE_HISTORICO",
+            "severidad": "alta",
+            "entidad": "estacion",
+            "mensaje": "La tasa de intentos fallidos (1.81%) supera en más de 1.5 veces el histórico (0.42%), lo que indica un deterioro reciente en la calidad de entrega."
+          },
+          {
+            "codigo": "RUTA_CRITICA",
+            "severidad": "alta",
+            "entidad": "RouteID_76f22159-a7b6-43d5-b424-fe21033d7784",
+            "mensaje": "La ruta presenta una tasa de fallidos del 7.83%, claramente por encima del umbral (5%) y debe ser intervenida de inmediato."
+          }
+        ],
+        "recomendaciones": [
+          "Analizar motivos de intentos fallidos en la ruta crítica RouteID_76f22159-a7b6-43d5-b424-fe21033d7784; reforzar comunicación con conductores y revisar si hay problemas recurrentes en clientes o direcciones.",
+          "Revisar las zonas con mayores fallidos (A-1.1B, A-1.1C, A-1.3C) para identificar patrones y tomar acción focalizada.",
+          "Optimizar la carga de rutas para aumentar la ocupación promedio y balancear el trabajo entre conductores.",
+          "Monitorear de cerca el comportamiento de la tasa de fallidos los próximos días para confirmar si es un evento aislado o tendencia.",
+          "Reforzar recordatorios y confirmaciones a destinatarios en zonas y rutas críticas para mejorar la efectividad de la primera entrega."
+        ]
+      },
+      "errores": [
+        "cifra_no_respaldada:98.2",
+        "cifra_no_respaldada:66.1"
+      ],
+      "prompt": "v1",
+      "tokens_entrada": 1180,
+      "tokens_salida": 784,
+      "costo_usd": 0.008632,
+      "segundos": 3.82
+    },
+    {
+      "modelo": "gpt-5-mini",
+      "archivo": "DLA7_2018-08-01.csv",
+      "repeticion": 1,
+      "reporte": {
+        "resumen": "La estación DLA7 procesó 9,911 paquetes el 2018-08-01 con 9,866 entregas y 45 intentos fallidos, resultando en una tasa de entrega del 99.55% y tasa de fallidos del 0.45%. Se operó con 41 rutas y una ocupación promedio del 77.03%. El desempeño general es muy bueno, pero hay concentraciones de fallidos en determinadas rutas y zonas (ej. RouteID_939f1e03... y la zona B-23.1B) que requieren atención. Existe una alerta de calidad de rutas que sugiere investigar causas puntuales y tomar acciones correctivas.",
+        "indicadores": [
+          {
+            "clave": "paquetes",
+            "valor": 9911.0,
+            "lectura": "Total de paquetes gestionados en la estación en el día"
+          },
+          {
+            "clave": "entregados",
+            "valor": 9866.0,
+            "lectura": "Paquetes entregados correctamente"
+          },
+          {
+            "clave": "intentos_fallidos",
+            "valor": 45.0,
+            "lectura": "Intentos de entrega que no se concretaron"
+          },
+          {
+            "clave": "tasa_entrega_pct",
+            "valor": 99.55,
+            "lectura": "Porcentaje de paquetes entregados sobre el total"
+          },
+          {
+            "clave": "tasa_fallidos_pct",
+            "valor": 0.45,
+            "lectura": "Porcentaje de intentos fallidos sobre el total"
+          },
+          {
+            "clave": "rutas",
+            "valor": 41.0,
+            "lectura": "Número de rutas operadas"
+          },
+          {
+            "clave": "ocupacion_promedio_pct",
+            "valor": 77.03,
+            "lectura": "Ocupación media de la flota respecto a su capacidad"
+          }
+        ],
+        "alertas": [
+          {
+            "codigo": "RUTAS_BAJA_CALIDAD",
+            "severidad": "media",
+            "entidad": "estacion",
+            "mensaje": "Se detectó baja calidad en al menos una ruta (con fallidos significativos) — esto puede indicar problemas recurrentes en asignación de paradas, direcciones erróneas o manejo operacional y afecta la experiencia del cliente si no se corrige."
+          }
+        ],
+        "recomendaciones": [
+          "Priorizar revisión de RouteID_939f1e03-6dfd-4ec1-a834-f2adc8787235 (252 paquetes, 11 fallidos, tasa fallidos 4.37%) para identificar causas (direcciones, ausencia de cliente, rechazos, etc.) y ejecutar reintentos o correcciones de datos.",
+          "Investigar RouteID_9850318d-b2af-4570-a2f1-46f02bd9c9f7 (186 paquetes, 9 fallidos, ocupación 53.44%) y evaluar redistribución de carga; baja ocupación sugiere posibilidad de reasignar paquetes para balancear rutas.",
+          "Auditar las zonas con mayor concentración de fallidos (B-23.1B: 25 pkts / 11 fallidos; A-5.2H: 8 pkts / 5 fallidos) para corregir direcciones, confirmar accesos y coordinar comunicaciones con clientes antes de próximos intentos.",
+          "Priorizar reintentos de entregas con ventana horaria (558 paquetes) en la misma jornada cuando sea posible para reducir reincidencias y mejorar tasa de satisfacción.",
+          "Solicitar feedback inmediato a los conductores de las rutas afectadas (fotos, notas de entrega, motivos de fallido) y actualizar motivos en el sistema para análisis raíz.",
+          "Si se confirman rechazos o problemas recurrentes de acceso, planificar campañas de comunicación proactiva (SMS/llamada) a clientes en zonas críticas antes de la entrega.",
+          "Monitorear las métricas de estas rutas durante los próximos 3 días y establecer un umbral de alarma (p. ej. >2% fallidos o >min_fallidos_ruta=5) para activar soporte operativo en tiempo real.",
+          "Mantener limpieza de datos: aprovechar los 14 registros recuperados en reintento como aprendizaje y verificar que no existan duplicados ni estados desconocidos (actualmente 0)."
+        ]
+      },
+      "errores": [],
+      "prompt": "v1",
+      "tokens_entrada": 1054,
+      "tokens_salida": 2181,
+      "costo_usd": 0.004626,
+      "segundos": 26.74
+    },
+    {
+      "modelo": "gpt-5-mini",
+      "archivo": "DLA7_2018-08-01.csv",
+      "repeticion": 2,
+      "reporte": {
+        "resumen": "La estación DLA7 operó con un volumen de 9,911 paquetes y una tasa de entrega muy alta (99.55%), con sólo 45 intentos fallidos (0.45%). Se atendieron 41 rutas con una ocupación promedio del 77.03%, y 558 paquetes con ventana horaria. A pesar del buen desempeño global, se activó una alerta de baja calidad en rutas; existen rutas y zonas puntuales con concentraciones de fallidos que requieren intervención localizada.",
+        "indicadores": [
+          {
+            "clave": "paquetes",
+            "valor": 9911.0,
+            "lectura": "Volumen diario de paquetes procesados en la estación."
+          },
+          {
+            "clave": "entregados",
+            "valor": 9866.0,
+            "lectura": "Paquetes exitosamente entregados hoy."
+          },
+          {
+            "clave": "intentos_fallidos",
+            "valor": 45.0,
+            "lectura": "Intentos de entrega que no culminaron en entrega (rechazos, ausencias, etc.)."
+          },
+          {
+            "clave": "tasa_entrega_pct",
+            "valor": 99.55,
+            "lectura": "Porcentaje de paquetes entregados sobre el total (excelente)."
+          },
+          {
+            "clave": "tasa_fallidos_pct",
+            "valor": 0.45,
+            "lectura": "Porcentaje de intentos fallidos sobre el total (por debajo del umbral operativo)."
+          },
+          {
+            "clave": "rutas",
+            "valor": 41.0,
+            "lectura": "Número de rutas operadas durante el día."
+          },
+          {
+            "clave": "ocupacion_promedio_pct",
+            "valor": 77.03,
+            "lectura": "Porcentaje promedio de ocupación por vehículo; indica buen aprovechamiento de capacidad."
+          }
+        ],
+        "alertas": [
+          {
+            "codigo": "RUTAS_BAJA_CALIDAD",
+            "severidad": "media",
+            "entidad": "estacion",
+            "mensaje": "Se detectó al menos 1 ruta con baja calidad operativa (valor=1). Aunque el desempeño global es bueno, rutas específicas presentan problemas que pueden escalar si no se corrigen."
+          }
+        ],
+        "recomendaciones": [
+          "Investigar las rutas identificadas como peores: RouteID_939f1e03 (11 fallidos, tasa 4.37%) y RouteID_9850318d (9 fallidos, tasa 4.84%). Revisar historial de entregas, asignación de personal y condiciones de acceso en esas rutas.",
+          "Priorizar acciones en las zonas con mayor concentración de fallidos: B-23.1B (25 paquetes, 11 fallidos) y A-5.2H (8 paquetes, 5 fallidos). Contactar a clientes en esas zonas y verificar causas (direcciones, disponibilidad, restricciones de acceso).",
+          "Ejecutar coaching y revisión de procesos con los conductores de las rutas con tasa de fallidos por encima del umbral de ruta (umbral_ruta_fallidos_pct=5%) o con min_fallidos_ruta >=5; aunque hoy ninguna supera 5% en la lista principal, dos rutas están cerca y deben monitorearse.",
+          "Revisar la asignación de carga y planificación: la ocupación promedio 77.03% es buena, pero rutas con ocupación muy baja (por ejemplo la que tiene 53.44%) pueden indicar ineficiencias; redistribuir paquetes o reagrupar paradas cuando sea posible.",
+          "Monitorear y dar seguimiento a las entregas con ventana horaria (558 paquetes) para asegurar cumplimiento y evitar intentos fallidos por ausencias; ajustar ventanas o comunicación con cliente si se observan patrones de no disponibilidad.",
+          "Mantener la calidad de datos: se recuperaron 14 filas en reintento (recuperados_en_reintento=14); continuar con controles para evitar pérdida de eventos y asegurar trazabilidad en rutas críticas."
+        ]
+      },
+      "errores": [],
+      "prompt": "v1",
+      "tokens_entrada": 1054,
+      "tokens_salida": 1529,
+      "costo_usd": 0.003321,
+      "segundos": 19.64
+    },
+    {
+      "modelo": "gpt-5-mini",
+      "archivo": "DLA7_2018-08-01.csv",
+      "repeticion": 3,
+      "reporte": {
+        "resumen": "La estación DLA7 cerró el día con alta eficiencia: 9,866 entregas de 9,911 paquetes, lo que da una tasa de entrega del 99.55% y sólo 45 intentos fallidos (0.45%). Hubo 41 rutas activas con ocupación promedio del 77.03%. Sin embargo, se detectó 1 ruta clasificada como baja calidad y hay concentraciones de fallidos en zonas específicas (especialmente B-23.1B), por lo que se recomienda intervención focalizada.",
+        "indicadores": [
+          {
+            "clave": "paquetes",
+            "valor": 9911.0,
+            "lectura": "Total de piezas gestionadas en la jornada."
+          },
+          {
+            "clave": "entregados",
+            "valor": 9866.0,
+            "lectura": "Paquetes efectivamente entregados al cliente."
+          },
+          {
+            "clave": "intentos_fallidos",
+            "valor": 45.0,
+            "lectura": "Número absoluto de intentos de entrega fallidos."
+          },
+          {
+            "clave": "tasa_entrega_pct",
+            "valor": 99.55,
+            "lectura": "Porcentaje de paquetes entregados sobre el total; excelente desempeño."
+          },
+          {
+            "clave": "tasa_fallidos_pct",
+            "valor": 0.45,
+            "lectura": "Porcentaje de intentos fallidos; está por debajo del umbral operativo (2.0%)."
+          },
+          {
+            "clave": "rutas",
+            "valor": 41.0,
+            "lectura": "Cantidad de rutas operativas en la estación."
+          },
+          {
+            "clave": "ocupacion_promedio_pct",
+            "valor": 77.03,
+            "lectura": "Nivel medio de carga por vehículo; margen para redistribuir si hace falta."
+          }
+        ],
+        "alertas": [
+          {
+            "codigo": "RUTAS_BAJA_CALIDAD",
+            "severidad": "media",
+            "entidad": "estacion",
+            "mensaje": "Se identificó 1 ruta con baja calidad (valor 1 vs referencia 0). Esto indica un foco de riesgo en la operación de rutas que puede afectar consistencia del servicio si no se corrige."
+          }
+        ],
+        "recomendaciones": [
+          "Revisar la ruta marcada como 'Low' (1 ruta) para identificar causas: revisar tiempos, asignación de paquetes y desempeño del conductor.",
+          "Investigar de inmediato la zona B-23.1B (25 paquetes, 11 fallidos). Es la mayor concentración relativa de fallidos y puede indicar problema de acceso, direcciones o rechazo frecuente.",
+          "Analizar las rutas con mayor número absoluto de fallidos (RouteID_939f1e03 con 11 fallidos y RouteID_9850318d con 9 fallidos) aunque su tasa % no exceda 5%; priorizar coaching de conductores o verificación de instrucciones de entrega para esas rutas.",
+          "Monitorear paquetes con ventana horaria (558) para asegurar cumplimiento de franjas y reducir reintentos; asignar prioridad operativa en planificación si corresponde.",
+          "Revisar la ocupación promedio (77.03%) y evaluar redistribución de carga entre rutas para mejorar eficiencia y reducir riesgo de sobrecarga en rutas críticas.",
+          "Verificar los 14 paquetes recuperados en reintento para confirmar que no haya problemas sistémicos ocultos (datos de direccionamiento, repiques, o incidencias recurrentes).",
+          "Programar seguimiento en 24-48 horas después de implementar acciones (auditoría de la ruta Low y zona B-23.1B) y medir si disminuyen los fallidos absolutos y por zona."
+        ]
+      },
+      "errores": [
+        "cifra_no_respaldada:24",
+        "cifra_no_respaldada:48"
+      ],
+      "prompt": "v1",
+      "tokens_entrada": 1054,
+      "tokens_salida": 1723,
+      "costo_usd": 0.00371,
+      "segundos": 21.54
+    },
+    {
+      "modelo": "gpt-5-mini",
+      "archivo": "DSE5_2018-07-28.csv",
+      "repeticion": 1,
+      "reporte": {
+        "resumen": "La estación DSE5 entregó 1,461 de 1,488 paquetes el 2018-07-28, con una tasa de entrega alta de 98.19%. Hubo 27 intentos fallidos (1.81%), superior al promedio histórico (0.42%), lo que activó una alerta de rendimiento. Se identificó una ruta crítica (RouteID_76f22159-a7b6-43d5-b424-fe21033d7784) con 17 fallidos y una tasa de 7.83% que requiere intervención inmediata. La operación usó 6 rutas con una ocupación promedio del 66.14%.",
+        "indicadores": [
+          {
+            "clave": "paquetes",
+            "valor": 1488.0,
+            "lectura": "Total de envíos procesados en la estación."
+          },
+          {
+            "clave": "entregados",
+            "valor": 1461.0,
+            "lectura": "Paquetes entregados correctamente durante el día."
+          },
+          {
+            "clave": "intentos_fallidos",
+            "valor": 27.0,
+            "lectura": "Número absoluto de intentos de entrega que no se completaron."
+          },
+          {
+            "clave": "tasa_entrega_pct",
+            "valor": 98.19,
+            "lectura": "Porcentaje de paquetes entregados respecto al total (muy alto)."
+          },
+          {
+            "clave": "tasa_fallidos_pct",
+            "valor": 1.81,
+            "lectura": "Porcentaje de intentos fallidos; por encima del histórico de la estación."
+          },
+          {
+            "clave": "rutas",
+            "valor": 6.0,
+            "lectura": "Cantidad de rutas operadas en la jornada."
+          },
+          {
+            "clave": "ocupacion_promedio_pct",
+            "valor": 66.14,
+            "lectura": "Grado de utilización promedio de la capacidad de las rutas."
+          }
+        ],
+        "alertas": [
+          {
+            "codigo": "FALLIDOS_SOBRE_HISTORICO",
+            "severidad": "alta",
+            "entidad": "estacion",
+            "mensaje": "La tasa de fallidos es 1.81%, superior al promedio histórico reportado (0.42%). Esto indica una desviación relevante en la calidad de entrega y puede reflejar problemas operativos o cambios en la demanda; requiere investigar causas y mitigar."
+          },
+          {
+            "codigo": "RUTA_CRITICA",
+            "severidad": "alta",
+            "entidad": "RouteID_76f22159-a7b6-43d5-b424-fe21033d7784",
+            "mensaje": "La ruta RouteID_76f22159-a7b6-43d5-b424-fe21033d7784 presentó 17 fallidos (tasa 7.83%), superando el umbral de ruta (5.0%). Es una ruta crítica que necesita acción inmediata (revisión de asignación, conductor, secuencia o problemas en zona)."
+          }
+        ],
+        "recomendaciones": [
+          "Priorizar intervención en la ruta crítica (RouteID_76f22159...): contactar al conductor, revisar hojas de ruta y registrar causas puntuales de fallidos (direcciones, accesos, rechazos).",
+          "Programar reintentos dirigidos para los 27 paquetes fallidos y priorizar aquellos en zonas identificadas con más fallidos (A-1.1B, A-1.1C, A-1.3C).",
+          "Rebalancear carga si es necesario: evaluar redistribuir paquetes de rutas con alta tasa de fallidos hacia rutas con mejor desempeño o ajustar secuencia para mejorar tasa de éxito.",
+          "Reforzar comunicación previa a entrega (SMS/llamada) en las zonas y rutas con más fallidos para reducir intentos fallidos por ausencia del destinatario.",
+          "Realizar auditoría corta (1–2 días) de causas de fallidos y actualizar instrucciones de entrega (puntos de acceso, notas de entrega) para las zonas A-1.1B, A-1.1C y A-1.3C.",
+          "Monitorear la métrica de fallidos diariamente y comparar con umbrales (umbral_fallidos_pct 2.0% y umbral_ruta_fallidos_pct 5.0%); repetir análisis tras implementar acciones en 48–72 horas.",
+          "Aprovechar que la calidad de datos es buena (1,489 filas leídas, 0 duplicados, 1 recuperado) para identificar patrones por conductor, ventana horaria o cluster de direcciones y tomar medidas preventivas."
+        ]
+      },
+      "errores": [
+        "cifra_no_respaldada:48",
+        "cifra_no_respaldada:72"
+      ],
+      "prompt": "v1",
+      "tokens_entrada": 1179,
+      "tokens_salida": 2308,
+      "costo_usd": 0.004911,
+      "segundos": 27.26
+    },
+    {
+      "modelo": "gpt-5-mini",
+      "archivo": "DSE5_2018-07-28.csv",
+      "repeticion": 2,
+      "reporte": {
+        "resumen": "Resumen operativo de la estación DSE5 para 2018-07-28: se procesaron 1,488 paquetes, de los cuales 1,461 fueron entregados y 27 resultaron en intentos fallidos (tasa de entrega 98.19%, tasa de fallidos 1.81%). Se cubrieron 6 rutas con ocupación promedio del 66.14% y una carga promedio de 248 paquetes por ruta. Hay alertas críticas: la tasa de fallidos está por encima del histórico y la ruta RouteID_76f22159-a7b6-43d5-b424-fe21033d7784 presenta una tasa de fallidos elevada (7.83%). Recomendaciones inmediatas incluyen investigar la ruta crítica, priorizar reintentos en las zonas con más fallidos y ajustar asignación de recursos para estabilizar la operación.",
+        "indicadores": [
+          {
+            "clave": "paquetes",
+            "valor": 1488.0,
+            "lectura": "Total de paquetes procesados por la estación en el día."
+          },
+          {
+            "clave": "entregados",
+            "valor": 1461.0,
+            "lectura": "Paquetes correctamente entregados a destinatarios."
+          },
+          {
+            "clave": "intentos_fallidos",
+            "valor": 27.0,
+            "lectura": "Número de intentos sin entrega en primera salida que requieren reintento o gestión."
+          },
+          {
+            "clave": "tasa_entrega_pct",
+            "valor": 98.19,
+            "lectura": "Porcentaje de paquetes entregados sobre el total; indica alta efectividad de entrega."
+          },
+          {
+            "clave": "tasa_fallidos_pct",
+            "valor": 1.81,
+            "lectura": "Porcentaje de intentos fallidos; aunque bajo en valor absoluto, resulta elevado respecto al histórico."
+          },
+          {
+            "clave": "rutas",
+            "valor": 6.0,
+            "lectura": "Cantidad de rutas operadas durante la jornada."
+          },
+          {
+            "clave": "ocupacion_promedio_pct",
+            "valor": 66.14,
+            "lectura": "Nivel medio de utilización de la capacidad de las rutas; espacio disponible para reasignaciones."
+          }
+        ],
+        "alertas": [
+          {
+            "codigo": "FALLIDOS_SOBRE_HISTORICO",
+            "severidad": "alta",
+            "entidad": "estacion",
+            "mensaje": "La tasa de fallidos del 1.81% supera el histórico de 0.42% (factor de incremento notable), lo que indica un empeoramiento en la calidad de entrega y riesgo sobre la satisfacción del cliente."
+          },
+          {
+            "codigo": "RUTA_CRITICA",
+            "severidad": "alta",
+            "entidad": "RouteID_76f22159-a7b6-43d5-b424-fe21033d7784",
+            "mensaje": "La ruta reporta 17 fallidos sobre 217 paquetes (tasa 7.83%), por encima del umbral de 5.0%; requiere revisión inmediata por impacto operativo y concentración de fallidos."
+          }
+        ],
+        "recomendaciones": [
+          "Asignar un supervisor o gestor a RouteID_76f22159-a7b6-43d5-b424-fe21033d7784 para revisión in situ y evaluación de causas (direcciones, accesos, horarios).",
+          "Priorizar reintentos y contacto proactivo con clientes en zonas con mayor número de fallidos (A-1.1B, A-1.1C, A-1.3C) durante las próximas 24-48 horas.",
+          "Analizar las 17 incidencias de la ruta crítica para clasificar causas (ausencia, dirección incorrecta, acceso) y documentar evidencias (fotos, llamadas).",
+          "Reasignar paquetes con ventana horaria (62) a franjas de alta probabilidad de entrega y avisar a clientes para reducir reintentos.",
+          "Aprovechar margen de ocupación (ocupación promedio 66.14%) para redistribuir carga entre rutas Medium y High y reducir presión operativa en rutas críticas.",
+          "Capacitar/recordar al equipo de última milla sobre protocolos de confirmación y registros de intento (evidencia foto/nota) para mejorar trazabilidad.",
+          "Establecer monitoreo diario de la tasa de fallidos y un checkpoint de seguimiento en 48 horas para verificar efectividad de las acciones.",
+          "Revisar datos por cliente en las direcciones con fallidos frecuentes para corregir errores de dirección en la base y reducir reintentos futuros."
+        ]
+      },
+      "errores": [
+        "cifra_no_respaldada:24",
+        "cifra_no_respaldada:48",
+        "cifra_no_respaldada:48"
+      ],
+      "prompt": "v1",
+      "tokens_entrada": 1179,
+      "tokens_salida": 2306,
+      "costo_usd": 0.004907,
+      "segundos": 27.07
+    },
+    {
+      "modelo": "gpt-5-mini",
+      "archivo": "DSE5_2018-07-28.csv",
+      "repeticion": 3,
+      "reporte": {
+        "resumen": "La estación DSE5 procesó 1,488 paquetes el 2018-07-28 con una tasa de entrega del 98.19% (1,461 entregados) y 27 intentos fallidos (1.81%). Aunque la tasa de fallidos absoluta está por debajo del umbral operativo del 2.0%, el porcentaje de fallidos está significativamente por encima del histórico de referencia, lo que genera una alerta. Hay una ruta crítica (RouteID_76f22159-a7b6-43d5-b424-fe21033d7784) con 17 fallidos y una tasa de 7.83% que supera el umbral de ruta. La ocupación promedio fue 66.14%, con algunas rutas con alta ocupación y zonas puntuales (A-1.1B, A-1.1C, A-1.3C) concentrando la mayor parte de los fallidos.",
+        "indicadores": [
+          {
+            "clave": "paquetes",
+            "valor": 1488.0,
+            "lectura": "Total de paquetes procesados en la estación en el día."
+          },
+          {
+            "clave": "entregados",
+            "valor": 1461.0,
+            "lectura": "Paquetes entregados con éxito durante el día."
+          },
+          {
+            "clave": "intentos_fallidos",
+            "valor": 27.0,
+            "lectura": "Número absoluto de intentos donde no se concretó la entrega."
+          },
+          {
+            "clave": "tasa_entrega_pct",
+            "valor": 98.19,
+            "lectura": "Porcentaje de paquetes entregados respecto al total."
+          },
+          {
+            "clave": "tasa_fallidos_pct",
+            "valor": 1.81,
+            "lectura": "Porcentaje de intentos fallidos respecto al total de paquetes."
+          },
+          {
+            "clave": "rutas",
+            "valor": 6.0,
+            "lectura": "Cantidad de rutas operadas desde la estación."
+          },
+          {
+            "clave": "ocupacion_promedio_pct",
+            "valor": 66.14,
+            "lectura": "Nivel medio de ocupación de la flota respecto a su capacidad."
+          }
+        ],
+        "alertas": [
+          {
+            "codigo": "FALLIDOS_SOBRE_HISTORICO",
+            "severidad": "alta",
+            "entidad": "estacion",
+            "mensaje": "La tasa de fallidos del 1.81% está notablemente por encima del histórico de referencia (0.42%), indicando un empeoramiento de la performance que requiere análisis de causa raíz a pesar de estar ligeramente por debajo del umbral operativo del 2.0%."
+          },
+          {
+            "codigo": "RUTA_CRITICA",
+            "severidad": "alta",
+            "entidad": "RouteID_76f22159-a7b6-43d5-b424-fe21033d7784",
+            "mensaje": "Esta ruta registra 17 fallidos (7.83%), superior al umbral de ruta del 5.0%; necesita intervención inmediata (revisión de planificación, conductor, ventanas horarias y condiciones de entrega)."
+          }
+        ],
+        "recomendaciones": [
+          "Abrir investigación inmediata de la ruta crítica RouteID_76f22159-a7b6-43d5-b424-fe21033d7784: revisar entregas fallidas, llamadas registradas, disponibilidad del cliente y desempeño del conductor.",
+          "Contactar proactivamente a receptores en las peores zonas (A-1.1B, A-1.1C, A-1.3C) para confirmar direcciones y franjas horarias; programar reintentos con prioridad y/o entrega en punto alternativo.",
+          "Reforzar uso de ventanas horarias y recordatorios (SMS/llamada) para los 62 paquetes con ventana asociada y promover mayor adopción de ventanas para reducir fallidos.",
+          "Reasignar o equilibrar carga entre rutas si detectamos congestión (evaluar la ruta con ocupación 92.23% vs rutas con ocupación baja) para mejorar eficiencia y reducir riesgo de fallidos por sobrecarga.",
+          "Coaching puntual a los conductores sobre manejo de intentos fallidos: verificación de contacto previo, fotografía / evidencia, y registro correcto de motivos para análisis posterior.",
+          "Monitorear la tendencia de fallidos diariamente y realizar un análisis de causa raíz (campañas especiales, problemas de direccionamiento, condiciones locales) si la tasa sigue por encima del histórico; ajustar umbrales si corresponde.",
+          "Mantener seguimiento de calidad de datos (filas leídas 1,489; 1 registro recuperado en reintento) y reportar cualquier anomalía en estados desconocidos o duplicados."
+        ]
+      },
+      "errores": [],
+      "prompt": "v1",
+      "tokens_entrada": 1179,
+      "tokens_salida": 1947,
+      "costo_usd": 0.004189,
+      "segundos": 22.61
+    }
+  ]
+}

@@ -1,0 +1,1259 @@
+[
+  {
+    "id": "caso_01",
+    "tipo": "normal",
+    "archivo": "archivos/caso_01.csv",
+    "origen": "DBO1_2018-08-07",
+    "suciedad": [],
+    "historico_tasas": [
+      0.0,
+      0.35,
+      0.0,
+      0.0,
+      0.0,
+      0.39,
+      2.67
+    ],
+    "esperado": {
+      "paquetes": 790,
+      "entregados": 789,
+      "intentos_fallidos": 1,
+      "rechazados": 0,
+      "tasa_fallidos_pct": 0.13,
+      "rutas": 3,
+      "alertas": []
+    }
+  },
+  {
+    "id": "caso_02",
+    "tipo": "normal",
+    "archivo": "archivos/caso_02.csv",
+    "origen": "DLA4_2018-07-19",
+    "suciedad": [],
+    "historico_tasas": [],
+    "esperado": {
+      "paquetes": 215,
+      "entregados": 215,
+      "intentos_fallidos": 0,
+      "rechazados": 0,
+      "tasa_fallidos_pct": 0.0,
+      "rutas": 1,
+      "alertas": []
+    }
+  },
+  {
+    "id": "caso_03",
+    "tipo": "normal",
+    "archivo": "archivos/caso_03.csv",
+    "origen": "DSE2_2018-08-03",
+    "suciedad": [],
+    "historico_tasas": [
+      4.24,
+      0.48,
+      0.91,
+      0.7,
+      0.23,
+      0.43,
+      1.3
+    ],
+    "esperado": {
+      "paquetes": 971,
+      "entregados": 961,
+      "intentos_fallidos": 10,
+      "rechazados": 0,
+      "tasa_fallidos_pct": 1.03,
+      "rutas": 5,
+      "alertas": []
+    }
+  },
+  {
+    "id": "caso_04",
+    "tipo": "normal",
+    "archivo": "archivos/caso_04.csv",
+    "origen": "DLA5_2018-07-20",
+    "suciedad": [],
+    "historico_tasas": [
+      0.78
+    ],
+    "esperado": {
+      "paquetes": 290,
+      "entregados": 290,
+      "intentos_fallidos": 0,
+      "rechazados": 0,
+      "tasa_fallidos_pct": 0.0,
+      "rutas": 1,
+      "alertas": []
+    }
+  },
+  {
+    "id": "caso_05",
+    "tipo": "normal",
+    "archivo": "archivos/caso_05.csv",
+    "origen": "DCH2_2018-07-21",
+    "suciedad": [],
+    "historico_tasas": [
+      0.0,
+      1.56
+    ],
+    "esperado": {
+      "paquetes": 1412,
+      "entregados": 1406,
+      "intentos_fallidos": 6,
+      "rechazados": 0,
+      "tasa_fallidos_pct": 0.42,
+      "rutas": 5,
+      "alertas": []
+    }
+  },
+  {
+    "id": "caso_06",
+    "tipo": "normal",
+    "archivo": "archivos/caso_06.csv",
+    "origen": "DCH2_2018-08-15",
+    "suciedad": [],
+    "historico_tasas": [
+      0.55,
+      0.25,
+      0.54,
+      2.03,
+      2.37,
+      0.0,
+      1.9
+    ],
+    "esperado": {
+      "paquetes": 832,
+      "entregados": 827,
+      "intentos_fallidos": 5,
+      "rechazados": 0,
+      "tasa_fallidos_pct": 0.6,
+      "rutas": 3,
+      "alertas": []
+    }
+  },
+  {
+    "id": "caso_07",
+    "tipo": "normal",
+    "archivo": "archivos/caso_07.csv",
+    "origen": "DSE4_2018-08-19",
+    "suciedad": [],
+    "historico_tasas": [
+      1.57,
+      1.48,
+      0.59,
+      0.35,
+      0.45,
+      0.33,
+      0.5
+    ],
+    "esperado": {
+      "paquetes": 1483,
+      "entregados": 1473,
+      "intentos_fallidos": 10,
+      "rechazados": 0,
+      "tasa_fallidos_pct": 0.67,
+      "rutas": 6,
+      "alertas": []
+    }
+  },
+  {
+    "id": "caso_08",
+    "tipo": "normal",
+    "archivo": "archivos/caso_08.csv",
+    "origen": "DSE5_2018-07-19",
+    "suciedad": [],
+    "historico_tasas": [],
+    "esperado": {
+      "paquetes": 702,
+      "entregados": 702,
+      "intentos_fallidos": 0,
+      "rechazados": 0,
+      "tasa_fallidos_pct": 0.0,
+      "rutas": 3,
+      "alertas": []
+    }
+  },
+  {
+    "id": "caso_09",
+    "tipo": "normal",
+    "archivo": "archivos/caso_09.csv",
+    "origen": "DSE2_2018-07-19",
+    "suciedad": [],
+    "historico_tasas": [],
+    "esperado": {
+      "paquetes": 205,
+      "entregados": 204,
+      "intentos_fallidos": 1,
+      "rechazados": 0,
+      "tasa_fallidos_pct": 0.49,
+      "rutas": 1,
+      "alertas": []
+    }
+  },
+  {
+    "id": "caso_10",
+    "tipo": "normal",
+    "archivo": "archivos/caso_10.csv",
+    "origen": "DBO1_2018-08-11",
+    "suciedad": [],
+    "historico_tasas": [
+      0.0,
+      0.0,
+      0.39,
+      2.67,
+      0.13,
+      0.0,
+      0.18
+    ],
+    "esperado": {
+      "paquetes": 1036,
+      "entregados": 1031,
+      "intentos_fallidos": 5,
+      "rechazados": 0,
+      "tasa_fallidos_pct": 0.48,
+      "rutas": 4,
+      "alertas": []
+    }
+  },
+  {
+    "id": "caso_11",
+    "tipo": "normal",
+    "archivo": "archivos/caso_11.csv",
+    "origen": "DAU1_2018-07-26",
+    "suciedad": [],
+    "historico_tasas": [
+      1.06,
+      0.13,
+      0.48,
+      0.73,
+      0.29,
+      0.55
+    ],
+    "esperado": {
+      "paquetes": 642,
+      "entregados": 641,
+      "intentos_fallidos": 1,
+      "rechazados": 0,
+      "tasa_fallidos_pct": 0.16,
+      "rutas": 3,
+      "alertas": []
+    }
+  },
+  {
+    "id": "caso_12",
+    "tipo": "normal",
+    "archivo": "archivos/caso_12.csv",
+    "origen": "DLA4_2018-07-23",
+    "suciedad": [],
+    "historico_tasas": [
+      0.0,
+      0.86,
+      0.45,
+      1.31
+    ],
+    "esperado": {
+      "paquetes": 992,
+      "entregados": 984,
+      "intentos_fallidos": 8,
+      "rechazados": 0,
+      "tasa_fallidos_pct": 0.81,
+      "rutas": 4,
+      "alertas": []
+    }
+  },
+  {
+    "id": "caso_13",
+    "tipo": "normal",
+    "archivo": "archivos/caso_13.csv",
+    "origen": "DLA3_2018-07-23",
+    "suciedad": [],
+    "historico_tasas": [
+      0.41,
+      0.42,
+      1.76,
+      2.14
+    ],
+    "esperado": {
+      "paquetes": 472,
+      "entregados": 471,
+      "intentos_fallidos": 1,
+      "rechazados": 0,
+      "tasa_fallidos_pct": 0.21,
+      "rutas": 2,
+      "alertas": []
+    }
+  },
+  {
+    "id": "caso_14",
+    "tipo": "normal",
+    "archivo": "archivos/caso_14.csv",
+    "origen": "DCH2_2018-08-04",
+    "suciedad": [],
+    "historico_tasas": [
+      0.5,
+      0.91,
+      1.06,
+      1.15,
+      2.83,
+      0.0,
+      0.36
+    ],
+    "esperado": {
+      "paquetes": 822,
+      "entregados": 817,
+      "intentos_fallidos": 5,
+      "rechazados": 0,
+      "tasa_fallidos_pct": 0.61,
+      "rutas": 3,
+      "alertas": []
+    }
+  },
+  {
+    "id": "caso_15",
+    "tipo": "normal",
+    "archivo": "archivos/caso_15.csv",
+    "origen": "DSE2_2018-08-25",
+    "suciedad": [],
+    "historico_tasas": [
+      3.19,
+      0.55,
+      0.52,
+      0.0,
+      0.23,
+      0.79,
+      0.83
+    ],
+    "esperado": {
+      "paquetes": 928,
+      "entregados": 922,
+      "intentos_fallidos": 6,
+      "rechazados": 0,
+      "tasa_fallidos_pct": 0.65,
+      "rutas": 4,
+      "alertas": []
+    }
+  },
+  {
+    "id": "caso_16",
+    "tipo": "normal",
+    "archivo": "archivos/caso_16.csv",
+    "origen": "DCH2_2018-08-16",
+    "suciedad": [],
+    "historico_tasas": [
+      0.25,
+      0.54,
+      2.03,
+      2.37,
+      0.0,
+      1.9,
+      0.6
+    ],
+    "esperado": {
+      "paquetes": 1371,
+      "entregados": 1362,
+      "intentos_fallidos": 9,
+      "rechazados": 0,
+      "tasa_fallidos_pct": 0.66,
+      "rutas": 6,
+      "alertas": []
+    }
+  },
+  {
+    "id": "caso_17",
+    "tipo": "normal",
+    "archivo": "archivos/caso_17.csv",
+    "origen": "DCH3_2018-08-13",
+    "suciedad": [],
+    "historico_tasas": [
+      0.04,
+      0.19,
+      0.0,
+      0.07,
+      0.19,
+      0.06,
+      0.17
+    ],
+    "esperado": {
+      "paquetes": 1475,
+      "entregados": 1475,
+      "intentos_fallidos": 0,
+      "rechazados": 0,
+      "tasa_fallidos_pct": 0.0,
+      "rutas": 6,
+      "alertas": []
+    }
+  },
+  {
+    "id": "caso_18",
+    "tipo": "normal",
+    "archivo": "archivos/caso_18.csv",
+    "origen": "DLA3_2018-08-15",
+    "suciedad": [],
+    "historico_tasas": [
+      1.35,
+      1.17,
+      1.69,
+      4.5,
+      2.02,
+      1.18,
+      0.79
+    ],
+    "esperado": {
+      "paquetes": 680,
+      "entregados": 674,
+      "intentos_fallidos": 6,
+      "rechazados": 0,
+      "tasa_fallidos_pct": 0.88,
+      "rutas": 3,
+      "alertas": []
+    }
+  },
+  {
+    "id": "caso_19",
+    "tipo": "normal",
+    "archivo": "archivos/caso_19.csv",
+    "origen": "DSE2_2018-07-24",
+    "suciedad": [],
+    "historico_tasas": [
+      0.49,
+      0.64,
+      2.54,
+      0.95
+    ],
+    "esperado": {
+      "paquetes": 808,
+      "entregados": 801,
+      "intentos_fallidos": 7,
+      "rechazados": 0,
+      "tasa_fallidos_pct": 0.87,
+      "rutas": 4,
+      "alertas": []
+    }
+  },
+  {
+    "id": "caso_20",
+    "tipo": "normal",
+    "archivo": "archivos/caso_20.csv",
+    "origen": "DBO1_2018-07-27",
+    "suciedad": [],
+    "historico_tasas": [
+      0.4,
+      0.39,
+      1.82,
+      0.18,
+      0.09,
+      0.0
+    ],
+    "esperado": {
+      "paquetes": 283,
+      "entregados": 282,
+      "intentos_fallidos": 1,
+      "rechazados": 0,
+      "tasa_fallidos_pct": 0.35,
+      "rutas": 1,
+      "alertas": []
+    }
+  },
+  {
+    "id": "caso_21",
+    "tipo": "malo",
+    "archivo": "archivos/caso_21.csv",
+    "origen": "DLA5_2018-07-30",
+    "suciedad": [],
+    "historico_tasas": [
+      0.6,
+      0.91,
+      0.13,
+      0.35,
+      0.38,
+      0.0,
+      0.85
+    ],
+    "esperado": {
+      "paquetes": 1071,
+      "entregados": 1063,
+      "intentos_fallidos": 8,
+      "rechazados": 0,
+      "tasa_fallidos_pct": 0.75,
+      "rutas": 4,
+      "alertas": [
+        "FALLIDOS_SOBRE_HISTORICO:estacion"
+      ]
+    }
+  },
+  {
+    "id": "caso_22",
+    "tipo": "malo",
+    "archivo": "archivos/caso_22.csv",
+    "origen": "DLA5_2018-07-21",
+    "suciedad": [],
+    "historico_tasas": [
+      0.78,
+      0.0
+    ],
+    "esperado": {
+      "paquetes": 853,
+      "entregados": 827,
+      "intentos_fallidos": 26,
+      "rechazados": 0,
+      "tasa_fallidos_pct": 3.05,
+      "rutas": 3,
+      "alertas": [
+        "FALLIDOS_ALTOS:estacion",
+        "RUTA_CRITICA:RouteID_22cad670-8cd8-4474-99b8-46d028105cbe"
+      ]
+    }
+  },
+  {
+    "id": "caso_23",
+    "tipo": "malo",
+    "archivo": "archivos/caso_23.csv",
+    "origen": "DSE4_2018-07-28",
+    "suciedad": [],
+    "historico_tasas": [
+      0.61,
+      0.0,
+      0.51,
+      0.45,
+      0.56,
+      0.43,
+      0.82
+    ],
+    "esperado": {
+      "paquetes": 1391,
+      "entregados": 1375,
+      "intentos_fallidos": 16,
+      "rechazados": 0,
+      "tasa_fallidos_pct": 1.15,
+      "rutas": 6,
+      "alertas": [
+        "FALLIDOS_SOBRE_HISTORICO:estacion"
+      ]
+    }
+  },
+  {
+    "id": "caso_24",
+    "tipo": "malo",
+    "archivo": "archivos/caso_24.csv",
+    "origen": "DCH2_2018-08-14",
+    "suciedad": [],
+    "historico_tasas": [
+      0.7,
+      0.55,
+      0.25,
+      0.54,
+      2.03,
+      2.37,
+      0.0
+    ],
+    "esperado": {
+      "paquetes": 1053,
+      "entregados": 1033,
+      "intentos_fallidos": 20,
+      "rechazados": 0,
+      "tasa_fallidos_pct": 1.9,
+      "rutas": 4,
+      "alertas": [
+        "FALLIDOS_SOBRE_HISTORICO:estacion"
+      ]
+    }
+  },
+  {
+    "id": "caso_25",
+    "tipo": "malo",
+    "archivo": "archivos/caso_25.csv",
+    "origen": "DCH4_2018-08-04",
+    "suciedad": [],
+    "historico_tasas": [
+      0.22,
+      0.23,
+      0.13,
+      0.17,
+      0.07,
+      0.59,
+      0.24
+    ],
+    "esperado": {
+      "paquetes": 270,
+      "entregados": 268,
+      "intentos_fallidos": 2,
+      "rechazados": 0,
+      "tasa_fallidos_pct": 0.74,
+      "rutas": 1,
+      "alertas": [
+        "FALLIDOS_SOBRE_HISTORICO:estacion"
+      ]
+    }
+  },
+  {
+    "id": "caso_26",
+    "tipo": "malo",
+    "archivo": "archivos/caso_26.csv",
+    "origen": "DBO1_2018-08-05",
+    "suciedad": [],
+    "historico_tasas": [
+      0.09,
+      0.0,
+      0.35,
+      0.0,
+      0.0,
+      0.0,
+      0.39
+    ],
+    "esperado": {
+      "paquetes": 637,
+      "entregados": 620,
+      "intentos_fallidos": 17,
+      "rechazados": 0,
+      "tasa_fallidos_pct": 2.67,
+      "rutas": 3,
+      "alertas": [
+        "FALLIDOS_ALTOS:estacion",
+        "FALLIDOS_SOBRE_HISTORICO:estacion",
+        "RUTA_CRITICA:RouteID_31e2e8f4-23b4-40c9-898a-2e5e9afddb55"
+      ]
+    }
+  },
+  {
+    "id": "caso_27",
+    "tipo": "malo",
+    "archivo": "archivos/caso_27.csv",
+    "origen": "DLA5_2018-08-01",
+    "suciedad": [],
+    "historico_tasas": [
+      0.13,
+      0.35,
+      0.38,
+      0.0,
+      0.85,
+      0.75,
+      0.76
+    ],
+    "esperado": {
+      "paquetes": 762,
+      "entregados": 754,
+      "intentos_fallidos": 8,
+      "rechazados": 0,
+      "tasa_fallidos_pct": 1.05,
+      "rutas": 3,
+      "alertas": [
+        "FALLIDOS_SOBRE_HISTORICO:estacion"
+      ]
+    }
+  },
+  {
+    "id": "caso_28",
+    "tipo": "malo",
+    "archivo": "archivos/caso_28.csv",
+    "origen": "DCH3_2018-08-12",
+    "suciedad": [],
+    "historico_tasas": [
+      0.1,
+      0.04,
+      0.19,
+      0.0,
+      0.07,
+      0.19,
+      0.06
+    ],
+    "esperado": {
+      "paquetes": 1163,
+      "entregados": 1161,
+      "intentos_fallidos": 2,
+      "rechazados": 0,
+      "tasa_fallidos_pct": 0.17,
+      "rutas": 5,
+      "alertas": [
+        "FALLIDOS_SOBRE_HISTORICO:estacion",
+        "RUTAS_BAJA_CALIDAD:estacion"
+      ]
+    }
+  },
+  {
+    "id": "caso_29",
+    "tipo": "malo",
+    "archivo": "archivos/caso_29.csv",
+    "origen": "DLA3_2018-08-13",
+    "suciedad": [],
+    "historico_tasas": [
+      3.26,
+      1.8,
+      1.35,
+      1.17,
+      1.69,
+      4.5,
+      2.02
+    ],
+    "esperado": {
+      "paquetes": 1355,
+      "entregados": 1339,
+      "intentos_fallidos": 16,
+      "rechazados": 0,
+      "tasa_fallidos_pct": 1.18,
+      "rutas": 6,
+      "alertas": [
+        "RUTA_CRITICA:RouteID_92d5f4cc-d06e-4282-853e-3ea4195544e0"
+      ]
+    }
+  },
+  {
+    "id": "caso_30",
+    "tipo": "malo",
+    "archivo": "archivos/caso_30.csv",
+    "origen": "DLA9_2018-08-03",
+    "suciedad": [],
+    "historico_tasas": [
+      0.92,
+      0.93,
+      0.73,
+      0.42,
+      0.49,
+      0.21,
+      0.17
+    ],
+    "esperado": {
+      "paquetes": 505,
+      "entregados": 498,
+      "intentos_fallidos": 7,
+      "rechazados": 0,
+      "tasa_fallidos_pct": 1.39,
+      "rutas": 2,
+      "alertas": [
+        "FALLIDOS_SOBRE_HISTORICO:estacion"
+      ]
+    }
+  },
+  {
+    "id": "caso_31",
+    "tipo": "malo",
+    "archivo": "archivos/caso_31.csv",
+    "origen": "DCH1_2018-07-19",
+    "suciedad": [],
+    "historico_tasas": [],
+    "esperado": {
+      "paquetes": 992,
+      "entregados": 971,
+      "intentos_fallidos": 21,
+      "rechazados": 0,
+      "tasa_fallidos_pct": 2.12,
+      "rutas": 4,
+      "alertas": [
+        "FALLIDOS_ALTOS:estacion",
+        "RUTA_CRITICA:RouteID_bae504fc-e911-4e97-ba8d-afa4283ce38d"
+      ]
+    }
+  },
+  {
+    "id": "caso_32",
+    "tipo": "malo",
+    "archivo": "archivos/caso_32.csv",
+    "origen": "DBO3_2018-07-24",
+    "suciedad": [],
+    "historico_tasas": [
+      0.16,
+      0.15,
+      0.71,
+      0.57
+    ],
+    "esperado": {
+      "paquetes": 1283,
+      "entregados": 1271,
+      "intentos_fallidos": 12,
+      "rechazados": 0,
+      "tasa_fallidos_pct": 0.94,
+      "rutas": 5,
+      "alertas": [
+        "FALLIDOS_SOBRE_HISTORICO:estacion"
+      ]
+    }
+  },
+  {
+    "id": "caso_33",
+    "tipo": "malo",
+    "archivo": "archivos/caso_33.csv",
+    "origen": "DSE2_2018-08-18",
+    "suciedad": [],
+    "historico_tasas": [
+      0.76,
+      0.72,
+      0.22,
+      0.51,
+      0.48,
+      0.65,
+      1.64
+    ],
+    "esperado": {
+      "paquetes": 188,
+      "entregados": 182,
+      "intentos_fallidos": 6,
+      "rechazados": 0,
+      "tasa_fallidos_pct": 3.19,
+      "rutas": 1,
+      "alertas": [
+        "FALLIDOS_ALTOS:estacion",
+        "FALLIDOS_SOBRE_HISTORICO:estacion"
+      ]
+    }
+  },
+  {
+    "id": "caso_34",
+    "tipo": "malo",
+    "archivo": "archivos/caso_34.csv",
+    "origen": "DLA3_2018-07-30",
+    "suciedad": [],
+    "historico_tasas": [
+      0.21,
+      2.09,
+      0.72,
+      1.76,
+      1.73,
+      1.57,
+      2.47
+    ],
+    "esperado": {
+      "paquetes": 602,
+      "entregados": 574,
+      "intentos_fallidos": 28,
+      "rechazados": 0,
+      "tasa_fallidos_pct": 4.65,
+      "rutas": 3,
+      "alertas": [
+        "FALLIDOS_ALTOS:estacion",
+        "FALLIDOS_SOBRE_HISTORICO:estacion",
+        "RUTA_CRITICA:RouteID_4d57edec-1cea-482c-9e00-1748e3e08b21",
+        "RUTA_CRITICA:RouteID_7a562420-3604-4b49-86e4-e54be08f64d8"
+      ]
+    }
+  },
+  {
+    "id": "caso_35",
+    "tipo": "malo",
+    "archivo": "archivos/caso_35.csv",
+    "origen": "DLA3_2018-08-17",
+    "suciedad": [],
+    "historico_tasas": [
+      1.69,
+      4.5,
+      2.02,
+      1.18,
+      0.79,
+      0.88,
+      1.65
+    ],
+    "esperado": {
+      "paquetes": 340,
+      "entregados": 331,
+      "intentos_fallidos": 9,
+      "rechazados": 0,
+      "tasa_fallidos_pct": 2.65,
+      "rutas": 2,
+      "alertas": [
+        "FALLIDOS_ALTOS:estacion"
+      ]
+    }
+  },
+  {
+    "id": "caso_36",
+    "tipo": "sucio",
+    "archivo": "archivos/caso_36.csv",
+    "origen": "DCH1_2018-07-20",
+    "suciedad": [
+      "encabezados"
+    ],
+    "historico_tasas": [
+      2.12
+    ],
+    "esperado": {
+      "paquetes": 524,
+      "entregados": 521,
+      "intentos_fallidos": 3,
+      "rechazados": 0,
+      "tasa_fallidos_pct": 0.57,
+      "rutas": 2,
+      "alertas": []
+    }
+  },
+  {
+    "id": "caso_37",
+    "tipo": "sucio",
+    "archivo": "archivos/caso_37.csv",
+    "origen": "DSE2_2018-07-26",
+    "suciedad": [
+      "estados_mal_escritos"
+    ],
+    "historico_tasas": [
+      0.49,
+      0.64,
+      2.54,
+      0.95,
+      0.87,
+      0.22
+    ],
+    "esperado": {
+      "paquetes": 697,
+      "entregados": 691,
+      "intentos_fallidos": 6,
+      "rechazados": 0,
+      "tasa_fallidos_pct": 0.86,
+      "rutas": 3,
+      "alertas": []
+    }
+  },
+  {
+    "id": "caso_38",
+    "tipo": "sucio",
+    "archivo": "archivos/caso_38.csv",
+    "origen": "DSE2_2018-07-25",
+    "suciedad": [
+      "coma_decimal"
+    ],
+    "historico_tasas": [
+      0.49,
+      0.64,
+      2.54,
+      0.95,
+      0.87
+    ],
+    "esperado": {
+      "paquetes": 893,
+      "entregados": 891,
+      "intentos_fallidos": 2,
+      "rechazados": 0,
+      "tasa_fallidos_pct": 0.22,
+      "rutas": 4,
+      "alertas": []
+    }
+  },
+  {
+    "id": "caso_39",
+    "tipo": "sucio",
+    "archivo": "archivos/caso_39.csv",
+    "origen": "DSE4_2018-07-24",
+    "suciedad": [
+      "filas_duplicadas"
+    ],
+    "historico_tasas": [
+      0.19,
+      0.24,
+      0.61,
+      0.0,
+      0.51
+    ],
+    "esperado": {
+      "paquetes": 1326,
+      "entregados": 1320,
+      "intentos_fallidos": 6,
+      "rechazados": 0,
+      "tasa_fallidos_pct": 0.45,
+      "rutas": 5,
+      "alertas": [
+        "CALIDAD_DATOS:archivo"
+      ]
+    }
+  },
+  {
+    "id": "caso_40",
+    "tipo": "sucio",
+    "archivo": "archivos/caso_40.csv",
+    "origen": "DLA4_2018-08-05",
+    "suciedad": [
+      "estado_desconocido"
+    ],
+    "historico_tasas": [
+      0.76,
+      1.18,
+      1.14,
+      0.83,
+      1.24,
+      0.53,
+      0.88
+    ],
+    "esperado": {
+      "paquetes": 1087,
+      "entregados": 1064,
+      "intentos_fallidos": 19,
+      "rechazados": 0,
+      "tasa_fallidos_pct": 1.75,
+      "rutas": 5,
+      "alertas": [
+        "CALIDAD_DATOS:archivo",
+        "FALLIDOS_SOBRE_HISTORICO:estacion",
+        "RUTA_CRITICA:RouteID_dc589046-e853-482d-be1e-7ac86745a444"
+      ]
+    }
+  },
+  {
+    "id": "caso_41",
+    "tipo": "sucio",
+    "archivo": "archivos/caso_41.csv",
+    "origen": "DSE2_2018-07-22",
+    "suciedad": [
+      "dimension_basura"
+    ],
+    "historico_tasas": [
+      0.49,
+      0.64
+    ],
+    "esperado": {
+      "paquetes": 394,
+      "entregados": 384,
+      "intentos_fallidos": 10,
+      "rechazados": 0,
+      "tasa_fallidos_pct": 2.54,
+      "rutas": 2,
+      "alertas": [
+        "CALIDAD_DATOS:archivo",
+        "FALLIDOS_ALTOS:estacion"
+      ]
+    }
+  },
+  {
+    "id": "caso_42",
+    "tipo": "sucio",
+    "archivo": "archivos/caso_42.xlsx",
+    "origen": "DSE5_2018-07-28",
+    "suciedad": [
+      "excel"
+    ],
+    "historico_tasas": [
+      0.55,
+      0.96,
+      0.17,
+      0.28,
+      0.3,
+      0.32,
+      0.35
+    ],
+    "esperado": {
+      "paquetes": 1488,
+      "entregados": 1461,
+      "intentos_fallidos": 27,
+      "rechazados": 0,
+      "tasa_fallidos_pct": 1.81,
+      "rutas": 6,
+      "alertas": [
+        "FALLIDOS_SOBRE_HISTORICO:estacion",
+        "RUTA_CRITICA:RouteID_76f22159-a7b6-43d5-b424-fe21033d7784"
+      ]
+    }
+  },
+  {
+    "id": "caso_43",
+    "tipo": "sucio",
+    "archivo": "archivos/caso_43.csv",
+    "origen": "DBO1_2018-07-23",
+    "suciedad": [
+      "encabezados",
+      "filas_duplicadas"
+    ],
+    "historico_tasas": [
+      0.4,
+      0.39
+    ],
+    "esperado": {
+      "paquetes": 439,
+      "entregados": 431,
+      "intentos_fallidos": 8,
+      "rechazados": 0,
+      "tasa_fallidos_pct": 1.82,
+      "rutas": 2,
+      "alertas": [
+        "CALIDAD_DATOS:archivo"
+      ]
+    }
+  },
+  {
+    "id": "caso_44",
+    "tipo": "sucio",
+    "archivo": "archivos/caso_44.csv",
+    "origen": "DSE2_2018-08-07",
+    "suciedad": [
+      "estados_mal_escritos",
+      "estado_desconocido"
+    ],
+    "historico_tasas": [
+      0.23,
+      0.43,
+      1.3,
+      1.03,
+      1.0,
+      1.95,
+      0.48
+    ],
+    "esperado": {
+      "paquetes": 1077,
+      "entregados": 1069,
+      "intentos_fallidos": 4,
+      "rechazados": 0,
+      "tasa_fallidos_pct": 0.37,
+      "rutas": 5,
+      "alertas": [
+        "CALIDAD_DATOS:archivo"
+      ]
+    }
+  },
+  {
+    "id": "caso_45",
+    "tipo": "sucio",
+    "archivo": "archivos/caso_45.csv",
+    "origen": "DLA4_2018-07-28",
+    "suciedad": [
+      "coma_decimal",
+      "dimension_basura"
+    ],
+    "historico_tasas": [
+      0.45,
+      1.31,
+      0.81,
+      1.01,
+      1.13,
+      0.54,
+      0.76
+    ],
+    "esperado": {
+      "paquetes": 932,
+      "entregados": 921,
+      "intentos_fallidos": 11,
+      "rechazados": 0,
+      "tasa_fallidos_pct": 1.18,
+      "rutas": 4,
+      "alertas": [
+        "CALIDAD_DATOS:archivo"
+      ]
+    }
+  },
+  {
+    "id": "caso_46",
+    "tipo": "sucio",
+    "archivo": "archivos/caso_46.xlsx",
+    "origen": "DSE2_2018-07-27",
+    "suciedad": [
+      "filas_duplicadas",
+      "excel"
+    ],
+    "historico_tasas": [
+      0.49,
+      0.64,
+      2.54,
+      0.95,
+      0.87,
+      0.22,
+      0.86
+    ],
+    "esperado": {
+      "paquetes": 448,
+      "entregados": 429,
+      "intentos_fallidos": 19,
+      "rechazados": 0,
+      "tasa_fallidos_pct": 4.24,
+      "rutas": 2,
+      "alertas": [
+        "CALIDAD_DATOS:archivo",
+        "FALLIDOS_ALTOS:estacion",
+        "FALLIDOS_SOBRE_HISTORICO:estacion",
+        "RUTA_CRITICA:RouteID_19698ca8-5565-4bad-a1a6-0c257f4da0f8"
+      ]
+    }
+  },
+  {
+    "id": "caso_47",
+    "tipo": "sucio",
+    "archivo": "archivos/caso_47.csv",
+    "origen": "DSE4_2018-07-23",
+    "suciedad": [
+      "estado_desconocido",
+      "encabezados"
+    ],
+    "historico_tasas": [
+      0.19,
+      0.24,
+      0.61,
+      0.0
+    ],
+    "esperado": {
+      "paquetes": 785,
+      "entregados": 773,
+      "intentos_fallidos": 4,
+      "rechazados": 0,
+      "tasa_fallidos_pct": 0.51,
+      "rutas": 3,
+      "alertas": [
+        "CALIDAD_DATOS:archivo",
+        "FALLIDOS_SOBRE_HISTORICO:estacion"
+      ]
+    }
+  },
+  {
+    "id": "caso_48",
+    "tipo": "sucio",
+    "archivo": "archivos/caso_48.csv",
+    "origen": "DSE2_2018-08-09",
+    "suciedad": [
+      "dimension_basura",
+      "estados_mal_escritos"
+    ],
+    "historico_tasas": [
+      1.3,
+      1.03,
+      1.0,
+      1.95,
+      0.48,
+      0.37,
+      1.05
+    ],
+    "esperado": {
+      "paquetes": 1312,
+      "entregados": 1287,
+      "intentos_fallidos": 25,
+      "rechazados": 0,
+      "tasa_fallidos_pct": 1.91,
+      "rutas": 6,
+      "alertas": [
+        "CALIDAD_DATOS:archivo",
+        "FALLIDOS_SOBRE_HISTORICO:estacion",
+        "RUTA_CRITICA:RouteID_02f91cfa-3839-4e55-91a0-ab19c3e77683"
+      ]
+    }
+  },
+  {
+    "id": "caso_49",
+    "tipo": "invalido",
+    "archivo": "archivos/caso_49.csv",
+    "origen": "DBO1_2018-08-15",
+    "suciedad": [
+      "sin_columna_estado"
+    ],
+    "historico_tasas": [
+      2.67,
+      0.13,
+      0.0,
+      0.18,
+      0.48,
+      0.1,
+      0.0
+    ],
+    "esperado": {
+      "error": "Faltan columnas"
+    }
+  },
+  {
+    "id": "caso_50",
+    "tipo": "invalido",
+    "archivo": "archivos/caso_50.csv",
+    "origen": "DBO1_2018-08-17",
+    "suciedad": [
+      "sin_filas"
+    ],
+    "historico_tasas": [
+      0.0,
+      0.18,
+      0.48,
+      0.1,
+      0.0,
+      0.19,
+      1.42
+    ],
+    "esperado": {
+      "error": "no tiene filas"
+    }
+  }
+]

@@ -1,0 +1,16 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.venv
+
+# Datos crudos: pesados y con licencia propia, no se suben al repo
+data/
+
+# Claves secretas: nunca se suben
+.env

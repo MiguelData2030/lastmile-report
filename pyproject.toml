@@ -1,0 +1,39 @@
+[project]
+name = "lastmile-report"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Miguel Londoño", email = "miguelalejandro2177@hotmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "anthropic>=2.12.0",
+    "fastapi>=0.165.0",
+    "openai>=3.57.0",
+    "openpyxl>=3.1.5",
+    "pandas>=3.1.1",
+    "pydantic>=2.14.4",
+    "python-dotenv>=1.2.4",
+]
+
+[project.scripts]
+lastmile-report = "lastmile_report.cli:main"
+lastmile-comparar = "lastmile_report.comparar:main"
+lastmile-eval = "lastmile_report.evals:main"
+
+[build-system]
+requires = ["uv_build>=0.10.11,<0.11.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "pytest>=9.2.0",
+    "ruff>=0.17.6",
+]
+
+[tool.ruff]
+line-length = 110
+
+[tool.pytest.ini_options]
+pythonpath = ["tests"]

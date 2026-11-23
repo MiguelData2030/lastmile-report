@@ -1,0 +1,1 @@
+station_code,date,route_id,departure_time_utc,route_score,executor_capacity_cm3,stop_id,zone_id,lat,lng,package_id,scan_status,tw_start_utc,tw_end_utc,planned_service_time_s,depth_cm,height_cm,width_cm
